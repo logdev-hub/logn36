@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slides Aula 19</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <main class="slide-deck">
+      <nav class="slide-nav">
+        <a href="../index.html">Portal</a>
+        <a href="../livro-aluno.html#aula-19">Livro</a>
+        
+        <span data-slide-counter>1 / 17</span>
+      </nav>
+      <section class="slide" data-slide="1"><span class="slide-kicker">Problemática</span><h1>Aula 19<br>Realização de Inventário</h1><p><strong>Problema:</strong> na Rede Prático Supermercados, em uma operação de supermercado, a coordenação precisa contar itens críticos sem bloquear toda a operação.</p><h3>Questões provocadoras</h3><ul><li>Que dado precisa ser validado antes de decidir?</li><li>Qual cálculo sustenta a decisão: Plano de contagem e custo do inventário?</li><li>Que documento comprova a ação recomendada?</li><li>Qual risco operacional aparece se a equipe adiar a decisão?</li></ul></section><section class="slide" data-slide="2"><span class="slide-kicker">Meta</span><h2>Decisão da aula</h2><p>Os alunos serão capazes de realizar um inventário, conforme as políticas de gestão de estoques.</p><ul><li>Competência: executar processos de gestão de estoques com dados e documentos.</li><li>Evidência: Plano e relatório de inventário com contagem, acuracidade e divergências valorizadas</li><li>Fase do PI: simulação integrada e preparação dos entregáveis do Projeto Integrador</li></ul><p><strong>Entregável:</strong> Plano e relatório de inventário com contagem, acuracidade e divergências valorizadas</p></section><section class="slide" data-slide="3"><span class="slide-kicker">Dados</span><h2>Dados do problema</h2><p>A decisão começa pela qualidade dos dados, não pela opinião da equipe.</p><div class="slide-table"><table><thead><tr><th>Dado</th><th>Valor</th></tr></thead><tbody><tr><td>Saldo inicial</td><td>196</td></tr><tr><td>Entradas</td><td>83</td></tr><tr><td>Saídas</td><td>115</td></tr><tr><td>Demanda média</td><td>17</td></tr><tr><td>Lead time</td><td>7 dias</td></tr></tbody></table></div></section><section class="slide" data-slide="4"><span class="slide-kicker">SKUs</span><h2>Itens para análise</h2><p>Compare sistema, físico, custo e impacto antes de recomendar ação.</p><div class="slide-table"><table><thead><tr><th>SKU</th><th>Produto</th><th>Sistema</th><th>Físico</th></tr></thead><tbody><tr><td>SKU-1010</td><td>Etiqueta térmica 100x150</td><td>145</td><td>149</td></tr><tr><td>SKU-1001</td><td>Cabo USB-C reforçado</td><td>126</td><td>123</td></tr><tr><td>SKU-1002</td><td>Filtro automotivo linha leve</td><td>141</td><td>141</td></tr><tr><td>SKU-1003</td><td>Creme hidratante 250 ml</td><td>163</td><td>165</td></tr></tbody></table></div></section><section class="slide" data-slide="5"><span class="slide-kicker">Diagnóstico</span><h2>Como diagnosticar</h2><ul><li>Validar documento de origem e responsável pelo dado.</li><li>Separar fato, hipótese e decisão possível.</li><li>Usar o documento da aula: Ata de inventário final e liberação de ajustes.</li><li>Marcar o checklist antes, durante e depois do processo.</li></ul></section><section class="slide" data-slide="6"><span class="slide-kicker">Fundamento</span><h2>Fundamento em ação</h2><ul><li>Softwares de gestão de inventário: funcionalidades e importância.</li><li>Métodos de controle de estoques: conceito, tipos (Kanban, Kardex, Just in time (JIT), PEPS e UEPS, classificação ABC e XYZ etc.) e aplicabilidade.</li><li>Descarte de materiais: procedimentos e normas.</li><li>Inventário final com WMS, coletores, equipe, auditoria, evidência e liberação de ajustes.</li></ul><p><strong>Foco técnico:</strong> Inventário final com WMS, coletores, equipe, auditoria, evidência e liberação de ajustes.</p></section><section class="slide" data-slide="7"><span class="slide-kicker">Fórmulas</span><h2>Fórmulas da decisão</h2><p><code>Acuracidade = itens sem divergência / itens contados x 100</code></p><p><code>Valor da divergência = diferença física x custo unitário</code></p><p>Todo cálculo precisa terminar em interpretação, decisão e evidência documentada.</p></section><section class="slide" data-slide="8"><span class="slide-kicker">Solução 1</span>
+    <h2>Cálculo 1: Acuracidade</h2>
+    <p><code>Acuracidade = itens sem divergência / itens contados x 100</code></p>
+    <div class="slide-split">
+      <div>
+        <h3>Variáveis</h3>
+        <div class="slide-table"><table><thead><tr><th>Variável</th><th>Valor</th></tr></thead><tbody><tr><td>Itens contados</td><td>118</td></tr><tr><td>Sem divergência</td><td>112</td></tr></tbody></table></div>
+      </div>
+      <div>
+        <h3>Passo a passo</h3>
+        <ul><li>112 / 118 = 0.9492</li><li>Multiplicar por 100 = 94.92%</li><li>Comparar com a meta da política de estoque.</li></ul>
+      </div>
+    </div>
+    <p><strong>Interpretação:</strong> A acuracidade estimada é 94.92%.</p>
+    <p><strong>Decisão:</strong> Fazer segunda contagem nos itens divergentes e priorizar itens A.</p>
+    </section><section class="slide" data-slide="9"><span class="slide-kicker">Solução 2</span>
+    <h2>Cálculo 2: Valor da divergência</h2>
+    <p><code>Valor divergente = diferença absoluta x custo unitário</code></p>
+    <div class="slide-split">
+      <div>
+        <h3>Variáveis</h3>
+        <div class="slide-table"><table><thead><tr><th>Variável</th><th>Valor</th></tr></thead><tbody><tr><td>Sistema</td><td>145</td></tr><tr><td>Físico</td><td>149</td></tr><tr><td>Custo</td><td>R$ 46,25</td></tr></tbody></table></div>
+      </div>
+      <div>
+        <h3>Passo a passo</h3>
+        <ul><li>Diferença = 149 - 145 = 4</li><li>Valor = |4| x R$ 46,25 = R$ 185,00</li><li>Classificar por valor, criticidade e reincidência.</li></ul>
+      </div>
+    </div>
+    <p><strong>Interpretação:</strong> O impacto financeiro do item é R$ 185,00.</p>
+    <p><strong>Decisão:</strong> Ajustar somente após validação da segunda contagem e evidência.</p>
+    </section><section class="slide" data-slide="10"><span class="slide-kicker">Solução 3</span>
+    <h2>Cálculo 3: Tempo de contagem</h2>
+    <p><code>Tempo = endereços / (produtividade x equipes)</code></p>
+    <div class="slide-split">
+      <div>
+        <h3>Variáveis</h3>
+        <div class="slide-table"><table><thead><tr><th>Variável</th><th>Valor</th></tr></thead><tbody><tr><td>Endereços</td><td>61</td></tr><tr><td>Produtividade</td><td>10/h</td></tr><tr><td>Equipes</td><td>3</td></tr></tbody></table></div>
+      </div>
+      <div>
+        <h3>Passo a passo</h3>
+        <ul><li>Capacidade = 10 x 3 = 30 endereços/h</li><li>Tempo = 61 / 30 = 2.03 h</li><li>Adicionar tempo para segunda contagem e consolidação.</li></ul>
+      </div>
+    </div>
+    <p><strong>Interpretação:</strong> A contagem base exige 2.03 hora(s).</p>
+    <p><strong>Decisão:</strong> Reduzir escopo por curva ABC ou ampliar equipes se a janela for insuficiente.</p>
+    </section><section class="slide" data-slide="11"><span class="slide-kicker">Documento</span><h2>Documento e checklist</h2><p><strong>Ata de inventário final e liberação de ajustes</strong></p><ul><li>Campos mínimos preenchidos e rastreáveis.</li><li>Checklist operacional marcado com justificativa.</li><li>Cálculo anexado em planilha.</li><li>Decisão com responsável, prazo e evidência.</li></ul></section><section class="slide" data-slide="12"><span class="slide-kicker">Discussão</span><h2>Estudo de caso profissional</h2><p><strong>Empresa:</strong> GlobalPort Trading</p><ul><li>Diagnosticar a ocorrência com dados.</li><li>Aplicar o indicador principal da aula.</li><li>Apresentar ação imediata e prevenção.</li><li>Entregar relatório técnico de uma página.</li></ul></section><section class="slide" data-slide="13"><span class="slide-kicker">Atividade</span><h2>Atividade em grupo</h2><ul><li>Formar equipes de 4 a 5 estudantes.</li><li>Distribuir papéis: analista, conferente, comprador, líder e relator.</li><li>Validar dados, calcular, decidir e apresentar em até 4 minutos.</li><li>Critérios: evidência, coerência, comunicação e postura profissional.</li></ul></section><section class="slide" data-slide="14"><span class="slide-kicker">Mini Projeto</span><h2>Mini projeto da aula</h2><p>Plano e relatório de inventário com contagem, acuracidade e divergências valorizadas</p><ul><li>Cabeçalho e objetivo.</li><li>Dados utilizados e fórmula aplicada.</li><li>Documento/checklist anexado.</li><li>Decisão tomada e risco mitigado.</li><li>Evidência para o Projeto Integrador.</li></ul></section><section class="slide" data-slide="15"><span class="slide-kicker">IA e Planilha</span><h2>IA, Excel e Google Sheets</h2><p><strong>Uso da IA:</strong> organizar roteiro de contagem, classificar divergências por criticidade e sugerir causas prováveis.</p><p><strong>Prompt-base:</strong> Analise os dados da Aula 19, aplique Acuracidade = itens sem divergência / itens contados x 100, identifique riscos e gere decisão para o PI.</p><p><strong>Planilha:</strong> campos, fórmula, resultado, status e responsável.</p></section><section class="slide" data-slide="16"><span class="slide-kicker">Review</span><h2>Review da aula</h2><ul><li>Fundamento: Inventário final com WMS, coletores, equipe, auditoria, evidência e liberação de ajustes.</li><li>Cálculo principal: Plano de contagem e custo do inventário.</li><li>Cálculo complementar: Acuracidade antes/depois e valor em risco.</li><li>Documento/checklist: Ata de inventário final e liberação de ajustes</li><li>Decisão: Validar ajustes somente com rastreabilidade, segunda contagem e causa provável.</li></ul><p><strong>Pergunta final:</strong> que decisão eu consigo defender com dados e documento?</p></section><section class="slide" data-slide="17"><span class="slide-kicker">Próxima</span><h2>Amarração para a próxima aula</h2><p>A próxima aula fecha causa raiz com ROI, reincidência e meta pós-ação.</p><ul><li>Levar o documento preenchido.</li><li>Revisar o cálculo e a evidência anexada.</li><li>Registrar uma dúvida técnica para abrir a próxima aula.</li></ul></section>
+    </main>
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slides Aula 05</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <main class="slide-deck">
+      <nav class="slide-nav">
+        <a href="../index.html">Portal</a>
+        <a href="../livro-aluno.html#aula-05">Livro</a>
+        
+        <span data-slide-counter>1 / 17</span>
+      </nav>
+      <section class="slide" data-slide="1"><span class="slide-kicker">Problemática</span><h1>Aula 05<br>Controle de Saldos de Estoque</h1><p><strong>Problema:</strong> na PeçaCerta Autopeças, em uma operação de autopeças, o sistema mostra saldo suficiente, mas a expedição encontra quantidade menor ao separar pedidos prioritários.</p><h3>Questões provocadoras</h3><ul><li>Que dado precisa ser validado antes de decidir?</li><li>Qual cálculo sustenta a decisão: Reconciliação Kardex x ERP/WMS x contagem física?</li><li>Que documento comprova a ação recomendada?</li><li>Qual risco operacional aparece se a equipe adiar a decisão?</li></ul></section><section class="slide" data-slide="2"><span class="slide-kicker">Meta</span><h2>Decisão da aula</h2><p>Identificar e registrar os saldos de estoque com precisão, utilizando sistemas de informação.</p><ul><li>Competência: executar processos de gestão de estoques com dados e documentos.</li><li>Evidência: Kardex digital com entradas, saídas, ajustes e saldo final validado</li><li>Fase do PI: aplicação supervisionada em documentos, sistemas e casos práticos</li></ul><p><strong>Entregável:</strong> Kardex digital com entradas, saídas, ajustes e saldo final validado</p></section><section class="slide" data-slide="3"><span class="slide-kicker">Dados</span><h2>Dados do problema</h2><p>A decisão começa pela qualidade dos dados, não pela opinião da equipe.</p><div class="slide-table"><table><thead><tr><th>Dado</th><th>Valor</th></tr></thead><tbody><tr><td>Saldo inicial</td><td>140</td></tr><tr><td>Entradas</td><td>55</td></tr><tr><td>Saídas</td><td>73</td></tr><tr><td>Demanda média</td><td>29</td></tr><tr><td>Lead time</td><td>5 dias</td></tr></tbody></table></div></section><section class="slide" data-slide="4"><span class="slide-kicker">SKUs</span><h2>Itens para análise</h2><p>Compare sistema, físico, custo e impacto antes de recomendar ação.</p><div class="slide-table"><table><thead><tr><th>SKU</th><th>Produto</th><th>Sistema</th><th>Físico</th></tr></thead><tbody><tr><td>SKU-1006</td><td>Arroz tipo 1 pacote 5 kg</td><td>58</td><td>55</td></tr><tr><td>SKU-1007</td><td>Sensor de presença</td><td>73</td><td>73</td></tr><tr><td>SKU-1008</td><td>Máscara cirúrgica tripla</td><td>143</td><td>145</td></tr><tr><td>SKU-1009</td><td>Perfume linha premium</td><td>156</td><td>155</td></tr></tbody></table></div></section><section class="slide" data-slide="5"><span class="slide-kicker">Diagnóstico</span><h2>Como diagnosticar</h2><ul><li>Validar documento de origem e responsável pelo dado.</li><li>Separar fato, hipótese e decisão possível.</li><li>Usar o documento da aula: Checklist de auditoria de saldos ERP/WMS.</li><li>Marcar o checklist antes, durante e depois do processo.</li></ul></section><section class="slide" data-slide="6"><span class="slide-kicker">Fundamento</span><h2>Fundamento em ação</h2><ul><li>Controle de estoque: sistemas de informação, giro, cobertura.</li><li>Auditoria de saldos no ERP/WMS, reservas, bloqueios, avarias e lote em trânsito.</li><li>Reconciliação Kardex x ERP/WMS x contagem física.</li><li>Giro e cobertura por SKU.</li></ul><p><strong>Foco técnico:</strong> Auditoria de saldos no ERP/WMS, reservas, bloqueios, avarias e lote em trânsito.</p></section><section class="slide" data-slide="7"><span class="slide-kicker">Fórmulas</span><h2>Fórmulas da decisão</h2><p><code>Saldo final = saldo inicial + entradas - saídas ± ajustes</code></p><p><code>Cobertura em dias = saldo disponível / demanda média diária</code></p><p>Todo cálculo precisa terminar em interpretação, decisão e evidência documentada.</p></section><section class="slide" data-slide="8"><span class="slide-kicker">Solução 1</span>
+    <h2>Cálculo 1: Kardex e saldo final</h2>
+    <p><code>Saldo final = saldo inicial + entradas - saídas ± ajustes</code></p>
+    <div class="slide-split">
+      <div>
+        <h3>Variáveis</h3>
+        <div class="slide-table"><table><thead><tr><th>Variável</th><th>Valor</th></tr></thead><tbody><tr><td>Inicial</td><td>95</td></tr><tr><td>Entradas</td><td>25</td></tr><tr><td>Saídas</td><td>62</td></tr><tr><td>Ajuste</td><td>0</td></tr></tbody></table></div>
+      </div>
+      <div>
+        <h3>Passo a passo</h3>
+        <ul><li>95 + 25 = 120</li><li>120 - 62 = 58</li><li>Aplicar ajuste 0: saldo final = 58</li></ul>
+      </div>
+    </div>
+    <p><strong>Interpretação:</strong> O saldo final validado é 58 unidades.</p>
+    <p><strong>Decisão:</strong> Bloquear nova promessa de venda se a contagem física não confirmar esse saldo.</p>
+    </section><section class="slide" data-slide="9"><span class="slide-kicker">Solução 2</span>
+    <h2>Cálculo 2: Cobertura em dias</h2>
+    <p><code>Cobertura = saldo disponível / demanda média diária</code></p>
+    <div class="slide-split">
+      <div>
+        <h3>Variáveis</h3>
+        <div class="slide-table"><table><thead><tr><th>Variável</th><th>Valor</th></tr></thead><tbody><tr><td>Saldo disponível</td><td>58</td></tr><tr><td>Demanda média</td><td>29</td></tr><tr><td>Lead time</td><td>5 dias</td></tr></tbody></table></div>
+      </div>
+      <div>
+        <h3>Passo a passo</h3>
+        <ul><li>Usar saldo disponível: 58</li><li>Dividir por demanda média: 58 / 29 = 2.00 dias</li><li>Comparar com lead time: 2.00 dias versus 5 dias</li></ul>
+      </div>
+    </div>
+    <p><strong>Interpretação:</strong> A cobertura é 2.00 dias.</p>
+    <p><strong>Decisão:</strong> Acionar reposição preventiva quando a cobertura se aproximar do lead time.</p>
+    </section><section class="slide" data-slide="10"><span class="slide-kicker">Solução 3</span>
+    <h2>Cálculo 3: Giro de estoque</h2>
+    <p><code>Giro = consumo do período / estoque médio</code></p>
+    <div class="slide-split">
+      <div>
+        <h3>Variáveis</h3>
+        <div class="slide-table"><table><thead><tr><th>Variável</th><th>Valor</th></tr></thead><tbody><tr><td>Consumo</td><td>70</td></tr><tr><td>Estoque inicial</td><td>113</td></tr><tr><td>Estoque final</td><td>73</td></tr></tbody></table></div>
+      </div>
+      <div>
+        <h3>Passo a passo</h3>
+        <ul><li>Estoque médio = (113 + 73) / 2 = 93.00</li><li>Giro = 70 / 93.00 = 0.75</li><li>Classificar se o giro indica estoque parado ou risco de ruptura.</li></ul>
+      </div>
+    </div>
+    <p><strong>Interpretação:</strong> O item girou 0.75 vez(es) no período.</p>
+    <p><strong>Decisão:</strong> Separar no dashboard saldo total, reservado e disponível para evitar decisão com dado incompleto.</p>
+    </section><section class="slide" data-slide="11"><span class="slide-kicker">Documento</span><h2>Documento e checklist</h2><p><strong>Checklist de auditoria de saldos ERP/WMS</strong></p><ul><li>Campos mínimos preenchidos e rastreáveis.</li><li>Checklist operacional marcado com justificativa.</li><li>Cálculo anexado em planilha.</li><li>Decisão com responsável, prazo e evidência.</li></ul></section><section class="slide" data-slide="12"><span class="slide-kicker">Discussão</span><h2>Estudo de caso profissional</h2><p><strong>Empresa:</strong> Rede Prático Supermercados</p><ul><li>Diagnosticar a ocorrência com dados.</li><li>Aplicar o indicador principal da aula.</li><li>Apresentar ação imediata e prevenção.</li><li>Entregar relatório técnico de uma página.</li></ul></section><section class="slide" data-slide="13"><span class="slide-kicker">Atividade</span><h2>Atividade em grupo</h2><ul><li>Formar equipes de 4 a 5 estudantes.</li><li>Distribuir papéis: analista, conferente, comprador, líder e relator.</li><li>Validar dados, calcular, decidir e apresentar em até 4 minutos.</li><li>Critérios: evidência, coerência, comunicação e postura profissional.</li></ul></section><section class="slide" data-slide="14"><span class="slide-kicker">Mini Projeto</span><h2>Mini projeto da aula</h2><p>Kardex digital com entradas, saídas, ajustes e saldo final validado</p><ul><li>Cabeçalho e objetivo.</li><li>Dados utilizados e fórmula aplicada.</li><li>Documento/checklist anexado.</li><li>Decisão tomada e risco mitigado.</li><li>Evidência para o Projeto Integrador.</li></ul></section><section class="slide" data-slide="15"><span class="slide-kicker">IA e Planilha</span><h2>IA, Excel e Google Sheets</h2><p><strong>Uso da IA:</strong> conferir consistência de lançamentos e gerar alertas sobre saldos negativos ou consumos atípicos.</p><p><strong>Prompt-base:</strong> Analise os dados da Aula 05, aplique Saldo final = saldo inicial + entradas - saídas ± ajustes, identifique riscos e gere decisão para o PI.</p><p><strong>Planilha:</strong> campos, fórmula, resultado, status e responsável.</p></section><section class="slide" data-slide="16"><span class="slide-kicker">Review</span><h2>Review da aula</h2><ul><li>Fundamento: Auditoria de saldos no ERP/WMS, reservas, bloqueios, avarias e lote em trânsito.</li><li>Cálculo principal: Reconciliação Kardex x ERP/WMS x contagem física.</li><li>Cálculo complementar: Giro e cobertura por SKU.</li><li>Documento/checklist: Checklist de auditoria de saldos ERP/WMS</li><li>Decisão: Separar saldo total, reservado e disponível antes de prometer atendimento.</li></ul><p><strong>Pergunta final:</strong> que decisão eu consigo defender com dados e documento?</p></section><section class="slide" data-slide="17"><span class="slide-kicker">Próxima</span><h2>Amarração para a próxima aula</h2><p>A próxima aula usa o saldo auditado para parametrizar reposição por criticidade.</p><ul><li>Levar o documento preenchido.</li><li>Revisar o cálculo e a evidência anexada.</li><li>Registrar uma dúvida técnica para abrir a próxima aula.</li></ul></section>
+    </main>
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

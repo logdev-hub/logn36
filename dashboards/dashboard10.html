@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard Aula 10</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <div class="dashboard-page">
+      <header class="dashboard-header">
+        <div>
+          <span class="eyebrow">Dashboard Aula 10</span>
+          <h1>Solicitação de Reposição de Materiais</h1>
+          <p>Ponto de pedido, estoque de segurança, lead time, nível de serviço e urgência de compra</p>
+        </div>
+        <div class="header-actions">
+          <a class="btn btn-outline-light" href="../index.html">Portal</a>
+          <a class="btn btn-warning" href="../livro-aluno.html#aula-10">Livro do Aluno</a>
+        </div>
+      </header>
+      <main class="dashboard-content">
+        <section class="kpi-grid"><article class="kpi-card"><span>Giro</span><strong>0.6</strong><small>vezes</small></article><article class="kpi-card"><span>Cobertura</span><strong>5.2</strong><small>dias</small></article><article class="kpi-card"><span>Acuracidade</span><strong>91.0</strong><small>%</small></article><article class="kpi-card"><span>Ruptura</span><strong>10</strong><small>%</small></article><article class="kpi-card"><span>Divergências</span><strong>10</strong><small>un</small></article><article class="kpi-card"><span>Valor em estoque</span><strong>R$ 22.792,25</strong><small></small></article><article class="kpi-card"><span>Inventários</span><strong>1</strong><small>ciclos</small></article></section>
+        <section class="dashboard-grid">
+          <div class="chart-panel"><h2>Indicadores da Aula</h2><canvas id="barChart"></canvas></div>
+          <div class="chart-panel"><h2>Tendência de Acuracidade</h2><canvas id="lineChart"></canvas></div>
+        </section>
+        <section class="content-band">
+          <h2>Simulação ERP/WMS</h2>
+          <p>A tela simula produtos, entradas, saídas, inventários, divergências e relatórios. Use os dados para discutir decisão gerencial, prioridade de ação e impacto financeiro.</p>
+          <div class="table-responsive"><table class="table table-sm table-hover align-middle"><thead><tr><th>SKU</th><th>Produto</th><th>Entrada</th><th>Saída</th><th>Sistema</th><th>Físico</th><th>Divergência</th><th>Relatório</th></tr></thead><tbody><tr><td>SKU-1001</td><td>Cabo USB-C reforçado</td><td>25</td><td>46</td><td>89</td><td>86</td><td>-3</td><td>Analisar</td></tr><tr><td>SKU-1002</td><td>Filtro automotivo linha leve</td><td>32</td><td>54</td><td>104</td><td>104</td><td>0</td><td>OK</td></tr><tr><td>SKU-1003</td><td>Creme hidratante 250 ml</td><td>39</td><td>62</td><td>126</td><td>128</td><td>2</td><td>Analisar</td></tr><tr><td>SKU-1004</td><td>Luva nitrílica descartável</td><td>46</td><td>70</td><td>139</td><td>138</td><td>-1</td><td>Analisar</td></tr><tr><td>SKU-1005</td><td>Kit rolamento industrial</td><td>53</td><td>30</td><td>206</td><td>210</td><td>4</td><td>Analisar</td></tr></tbody></table></div>
+        </section>
+        <section class="content-band">
+          <h2>Relatório Gerencial</h2>
+          <p>Decisão recomendada: emitir requisição, negociar prioridade com compras e acompanhar fornecedor até a confirmação. O painel deve ser exportado como evidência do Projeto Integrador e comparado com os cálculos do livro.</p>
+        </section>
+      </main>
+    </div>
+    <script>window.dashboardData = {"labels": ["Giro", "Cobertura", "Acuracidade", "Ruptura", "Divergências"], "values": [6.0, 5.2, 91.0, 10, 10], "trend": [87.0, 88.5, 89.8, 90.4, 91.0]};</script>
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

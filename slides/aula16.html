@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slides Aula 16</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <main class="slide-deck">
+      <nav class="slide-nav">
+        <a href="../index.html">Portal</a>
+        <a href="../livro-aluno.html#aula-16">Livro</a>
+        
+        <span data-slide-counter>1 / 17</span>
+      </nav>
+      <section class="slide" data-slide="1"><span class="slide-kicker">Problemática</span><h1>Aula 16<br>Identificação de Divergências de Estoque</h1><p><strong>Problema:</strong> na PeçaCerta Autopeças, em uma operação de autopeças, a divergência voltou a aparecer e a gerência não aceita apenas ajuste de saldo.</p><h3>Questões provocadoras</h3><ul><li>Que dado precisa ser validado antes de decidir?</li><li>Qual cálculo sustenta a decisão: Pareto financeiro das divergências?</li><li>Que documento comprova a ação recomendada?</li><li>Qual risco operacional aparece se a equipe adiar a decisão?</li></ul></section><section class="slide" data-slide="2"><span class="slide-kicker">Meta</span><h2>Decisão da aula</h2><p>Indicar as causas das divergências de estoque, conforme inventário realizado.</p><ul><li>Competência: executar processos de gestão de estoques com dados e documentos.</li><li>Evidência: Relatório de causa raiz com evidências, plano de ação e responsáveis</li><li>Fase do PI: padronização, portfólio e melhoria do processo</li></ul><p><strong>Entregável:</strong> Relatório de causa raiz com evidências, plano de ação e responsáveis</p></section><section class="slide" data-slide="3"><span class="slide-kicker">Dados</span><h2>Dados do problema</h2><p>A decisão começa pela qualidade dos dados, não pela opinião da equipe.</p><div class="slide-table"><table><thead><tr><th>Dado</th><th>Valor</th></tr></thead><tbody><tr><td>Saldo inicial</td><td>184</td></tr><tr><td>Entradas</td><td>77</td></tr><tr><td>Saídas</td><td>106</td></tr><tr><td>Demanda média</td><td>26</td></tr><tr><td>Lead time</td><td>4 dias</td></tr></tbody></table></div></section><section class="slide" data-slide="4"><span class="slide-kicker">SKUs</span><h2>Itens para análise</h2><p>Compare sistema, físico, custo e impacto antes de recomendar ação.</p><div class="slide-table"><table><thead><tr><th>SKU</th><th>Produto</th><th>Sistema</th><th>Físico</th></tr></thead><tbody><tr><td>SKU-1007</td><td>Sensor de presença</td><td>112</td><td>112</td></tr><tr><td>SKU-1008</td><td>Máscara cirúrgica tripla</td><td>134</td><td>136</td></tr><tr><td>SKU-1009</td><td>Perfume linha premium</td><td>147</td><td>146</td></tr><tr><td>SKU-1010</td><td>Etiqueta térmica 100x150</td><td>166</td><td>170</td></tr></tbody></table></div></section><section class="slide" data-slide="5"><span class="slide-kicker">Diagnóstico</span><h2>Como diagnosticar</h2><ul><li>Validar documento de origem e responsável pelo dado.</li><li>Separar fato, hipótese e decisão possível.</li><li>Usar o documento da aula: Pareto financeiro de divergências e prevenção.</li><li>Marcar o checklist antes, durante e depois do processo.</li></ul></section><section class="slide" data-slide="6"><span class="slide-kicker">Fundamento</span><h2>Fundamento em ação</h2><ul><li>Gestão de estoque: conceito e importância.</li><li>Controle de estoque: sistemas de informação, giro, cobertura, ruptura, cálculos de estoque (mínimo, médio, máximo, ponto de pedido, estoque de segurança).</li><li>Inventários: conceito, tipos, planejamento, documentos, acurácia e divergências.</li><li>Divergência como problema financeiro, operacional e de confiabilidade dos dados.</li></ul><p><strong>Foco técnico:</strong> Divergência como problema financeiro, operacional e de confiabilidade dos dados.</p></section><section class="slide" data-slide="7"><span class="slide-kicker">Fórmulas</span><h2>Fórmulas da decisão</h2><p><code>Divergência percentual = (estoque físico - estoque sistêmico) / estoque sistêmico x 100</code></p><p><code>Impacto financeiro = diferença absoluta x custo unitário</code></p><p>Todo cálculo precisa terminar em interpretação, decisão e evidência documentada.</p></section><section class="slide" data-slide="8"><span class="slide-kicker">Solução 1</span>
+    <h2>Cálculo 1: Divergência percentual</h2>
+    <p><code>Divergência % = (físico - sistema) / sistema x 100</code></p>
+    <div class="slide-split">
+      <div>
+        <h3>Variáveis</h3>
+        <div class="slide-table"><table><thead><tr><th>Variável</th><th>Valor</th></tr></thead><tbody><tr><td>Sistema</td><td>155</td></tr><tr><td>Físico</td><td>154</td></tr><tr><td>Diferença</td><td>-1</td></tr></tbody></table></div>
+      </div>
+      <div>
+        <h3>Passo a passo</h3>
+        <ul><li>154 - 155 = -1</li><li>-1 / 155 = -0.0065</li><li>Multiplicar por 100 = -0.65%</li></ul>
+      </div>
+    </div>
+    <p><strong>Interpretação:</strong> A divergência é -0.65%.</p>
+    <p><strong>Decisão:</strong> Identificar se é sobra ou falta antes de qualquer ajuste sistêmico.</p>
+    </section><section class="slide" data-slide="9"><span class="slide-kicker">Solução 2</span>
+    <h2>Cálculo 2: Impacto acumulado</h2>
+    <p><code>Impacto acumulado = diferença absoluta x custo x reincidência</code></p>
+    <div class="slide-split">
+      <div>
+        <h3>Variáveis</h3>
+        <div class="slide-table"><table><thead><tr><th>Variável</th><th>Valor</th></tr></thead><tbody><tr><td>Diferença</td><td>1</td></tr><tr><td>Custo</td><td>R$ 36,80</td></tr><tr><td>Reincidência</td><td>3</td></tr></tbody></table></div>
+      </div>
+      <div>
+        <h3>Passo a passo</h3>
+        <ul><li>Uma ocorrência = |-1| x R$ 36,80 = R$ 36,80</li><li>Acumulado = R$ 36,80 x 3 = R$ 110,40</li><li>Comparar com o custo da ação corretiva.</li></ul>
+      </div>
+    </div>
+    <p><strong>Interpretação:</strong> O impacto acumulado estimado é R$ 110,40.</p>
+    <p><strong>Decisão:</strong> Priorizar plano de ação quando a reincidência torna o custo relevante.</p>
+    </section><section class="slide" data-slide="10"><span class="slide-kicker">Solução 3</span>
+    <h2>Cálculo 3: Prioridade da causa</h2>
+    <p><code>Prioridade = severidade x ocorrência x detecção</code></p>
+    <div class="slide-split">
+      <div>
+        <h3>Variáveis</h3>
+        <div class="slide-table"><table><thead><tr><th>Variável</th><th>Valor</th></tr></thead><tbody><tr><td>Severidade</td><td>4</td></tr><tr><td>Ocorrência</td><td>4</td></tr><tr><td>Detecção</td><td>2</td></tr></tbody></table></div>
+      </div>
+      <div>
+        <h3>Passo a passo</h3>
+        <ul><li>4 x 4 x 2 = 32</li><li>Quanto maior o índice, maior a urgência de investigação.</li><li>Registrar evidência necessária para confirmar a causa.</li></ul>
+      </div>
+    </div>
+    <p><strong>Interpretação:</strong> O índice de prioridade é 32.</p>
+    <p><strong>Decisão:</strong> Atacar primeiro a causa com maior prioridade e medir reincidência.</p>
+    </section><section class="slide" data-slide="11"><span class="slide-kicker">Documento</span><h2>Documento e checklist</h2><p><strong>Pareto financeiro de divergências e prevenção</strong></p><ul><li>Campos mínimos preenchidos e rastreáveis.</li><li>Checklist operacional marcado com justificativa.</li><li>Cálculo anexado em planilha.</li><li>Decisão com responsável, prazo e evidência.</li></ul></section><section class="slide" data-slide="12"><span class="slide-kicker">Discussão</span><h2>Estudo de caso profissional</h2><p><strong>Empresa:</strong> Rede Prático Supermercados</p><ul><li>Diagnosticar a ocorrência com dados.</li><li>Aplicar o indicador principal da aula.</li><li>Apresentar ação imediata e prevenção.</li><li>Entregar relatório técnico de uma página.</li></ul></section><section class="slide" data-slide="13"><span class="slide-kicker">Atividade</span><h2>Atividade em grupo</h2><ul><li>Formar equipes de 4 a 5 estudantes.</li><li>Distribuir papéis: analista, conferente, comprador, líder e relator.</li><li>Validar dados, calcular, decidir e apresentar em até 4 minutos.</li><li>Critérios: evidência, coerência, comunicação e postura profissional.</li></ul></section><section class="slide" data-slide="14"><span class="slide-kicker">Mini Projeto</span><h2>Mini projeto da aula</h2><p>Relatório de causa raiz com evidências, plano de ação e responsáveis</p><ul><li>Cabeçalho e objetivo.</li><li>Dados utilizados e fórmula aplicada.</li><li>Documento/checklist anexado.</li><li>Decisão tomada e risco mitigado.</li><li>Evidência para o Projeto Integrador.</li></ul></section><section class="slide" data-slide="15"><span class="slide-kicker">IA e Planilha</span><h2>IA, Excel e Google Sheets</h2><p><strong>Uso da IA:</strong> agrupar hipóteses, criar árvore de causa raiz e transformar dados de inventário em plano de ação.</p><p><strong>Prompt-base:</strong> Analise os dados da Aula 16, aplique Divergência percentual = (estoque físico - estoque sistêmico) / estoque sistêmico x 100, identifique riscos e gere decisão para o PI.</p><p><strong>Planilha:</strong> campos, fórmula, resultado, status e responsável.</p></section><section class="slide" data-slide="16"><span class="slide-kicker">Review</span><h2>Review da aula</h2><ul><li>Fundamento: Divergência como problema financeiro, operacional e de confiabilidade dos dados.</li><li>Cálculo principal: Pareto financeiro das divergências.</li><li>Cálculo complementar: Custo por causa e comparação prevenção x correção.</li><li>Documento/checklist: Pareto financeiro de divergências e prevenção</li><li>Decisão: Escolher ações preventivas quando forem mais baratas que corrigir reincidências.</li></ul><p><strong>Pergunta final:</strong> que decisão eu consigo defender com dados e documento?</p></section><section class="slide" data-slide="17"><span class="slide-kicker">Próxima</span><h2>Amarração para a próxima aula</h2><p>A próxima aula integra saldos, reservas, pedidos e lead time em simulação operacional.</p><ul><li>Levar o documento preenchido.</li><li>Revisar o cálculo e a evidência anexada.</li><li>Registrar uma dúvida técnica para abrir a próxima aula.</li></ul></section>
+    </main>
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>
