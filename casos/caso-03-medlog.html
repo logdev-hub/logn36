@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caso 3 - MedLog Saúde</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="../index.html">UC 3 Estoques</a>
+      <nav>
+        <a href="../index.html">Portal do aluno</a>
+        <a href="../livro-aluno.html">Livro do Aluno</a>
+        <a href="../index.html#casos-complementares">Casos complementares</a>
+        <span class="sidebar-label">Aulas</span>
+        <a href="../livro-aluno/aula-01.html">Aula 01</a>
+        <a href="../livro-aluno/aula-02.html">Aula 02</a>
+        <a href="../livro-aluno/aula-03.html">Aula 03</a>
+        <a href="../livro-aluno/aula-04.html">Aula 04</a>
+        <a href="../livro-aluno/aula-05.html">Aula 05</a>
+        <a href="../livro-aluno/aula-06.html">Aula 06</a>
+        <a href="../livro-aluno/aula-07.html">Aula 07</a>
+        <a href="../livro-aluno/aula-08.html">Aula 08</a>
+        <a href="../livro-aluno/aula-09.html">Aula 09</a>
+        <a href="../livro-aluno/aula-10.html">Aula 10</a>
+        <a href="../livro-aluno/aula-11.html">Aula 11</a>
+        <a href="../livro-aluno/aula-12.html">Aula 12</a>
+        <a href="../livro-aluno/aula-13.html">Aula 13</a>
+        <a href="../livro-aluno/aula-14.html">Aula 14</a>
+        <a href="../livro-aluno/aula-15.html">Aula 15</a>
+        <a href="../livro-aluno/aula-16.html">Aula 16</a>
+        <a href="../livro-aluno/aula-17.html">Aula 17</a>
+        <a href="../livro-aluno/aula-18.html">Aula 18</a>
+        <a href="../livro-aluno/aula-19.html">Aula 19</a>
+        <a href="../livro-aluno/aula-20.html">Aula 20</a>
+        <a href="../livro-aluno/aula-21.html">Aula 21</a>
+        <span class="sidebar-label">Complementos</span>
+        <a href="../casos/caso-01-cafelab.html">Caso 1 - Cafélab</a>
+        <a href="../casos/caso-02-freshbox.html">Caso 2 - FreshBox</a>
+        <a class="active" href="../casos/caso-03-medlog.html">Caso 3 - MedLog</a>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <div class="topbar">
+        <button class="btn btn-outline-light btn-sm nav-toggle" type="button" data-toggle-sidebar aria-label="Abrir menu">Menu</button>
+        <div>
+          <strong>Caso 3 - MedLog Saúde</strong>
+          <small>Exercício para resolução do aluno</small>
+        </div>
+        <div class="header-actions">
+          <a class="btn btn-outline-light btn-sm" href="../livro-aluno.html">Índice</a>
+          <button class="btn btn-warning btn-sm" type="button" data-print>Imprimir</button>
+        </div>
+      </div>
+
+      <article class="case-content">
+        <header class="case-hero">
+          <span class="eyebrow">Caso complementar 3</span>
+          <h1>MedLog Saúde: inventário e curva ABC hospitalar</h1>
+          <p>Você integra a equipe de estoque de uma distribuidora hospitalar. A meta é priorizar contagem cíclica, reduzir divergências e evitar ruptura em itens sensíveis para atendimento clínico.</p>
+          <div class="case-actions">
+            <a class="btn btn-outline-light" href="../index.html#casos-complementares">Voltar aos complementos</a>
+          </div>
+        </header>
+
+        <section>
+          <h2>Cenário profissional</h2>
+          <p>A MedLog Saúde distribui materiais hospitalares para clínicas e pequenos hospitais. A equipe percebeu diferenças entre sistema e contagem física. Como alguns itens são críticos, a decisão não pode ser baseada apenas na quantidade divergente: é preciso considerar valor financeiro, curva ABC, acuracidade e cobertura em dias.</p>
+          <div class="callout">
+            <strong>Missão do aluno:</strong> usar dados de consumo, custo e inventário para definir quais itens devem ser recontados, quais exigem investigação e quais precisam de ação de reposição.
+          </div>
+        </section>
+
+        <section>
+          <h2>Dados para análise</h2>
+          <div class="table-responsive">
+            <table class="table table-bordered align-middle">
+              <thead><tr><th>SKU</th><th>Produto</th><th>Consumo mensal</th><th>Custo unitário</th><th>Sistema</th><th>Físico</th><th>Demanda média diária</th></tr></thead>
+              <tbody>
+                <tr><td>CUR-01</td><td>Curativo estéril cx 100</td><td>1.400</td><td>R$ 18,50</td><td>620</td><td>604</td><td>47</td></tr>
+                <tr><td>SER-10</td><td>Seringa 10 ml</td><td>5.200</td><td>R$ 1,20</td><td>2.400</td><td>2.428</td><td>173</td></tr>
+                <tr><td>EPI-95</td><td>Máscara PFF2</td><td>3.100</td><td>R$ 3,80</td><td>900</td><td>861</td><td>103</td></tr>
+                <tr><td>LUVA-P</td><td>Luva de procedimento cx</td><td>760</td><td>R$ 42,00</td><td>340</td><td>337</td><td>25</td></tr>
+                <tr><td>SORO-500</td><td>Soro fisiológico 500 ml</td><td>2.300</td><td>R$ 4,60</td><td>1.120</td><td>1.109</td><td>77</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section>
+          <h2>Como resolver: processo passo a passo</h2>
+          <div class="process-steps">
+            <div class="process-step">
+              <h3><span class="step-number">1</span>Calcular o valor mensal de consumo</h3>
+              <p>O valor mensal mostra o impacto financeiro de cada item no estoque.</p>
+              <code class="formula-line">Valor mensal = consumo mensal × custo unitário</code>
+              <p>Exemplo: se um item consome 1.400 unidades e custa R$ 18,50, o valor mensal é 1.400 × 18,50.</p>
+            </div>
+
+            <div class="process-step">
+              <h3><span class="step-number">2</span>Calcular a participação de cada SKU</h3>
+              <p>A participação mostra quanto cada item representa do valor total consumido.</p>
+              <code class="formula-line">Participação = valor mensal do item / valor mensal total × 100</code>
+              <p>Depois, ordene os itens do maior para o menor valor mensal.</p>
+            </div>
+
+            <div class="process-step">
+              <h3><span class="step-number">3</span>Montar a curva ABC</h3>
+              <p>A curva ABC ajuda a priorizar o controle: itens A merecem maior atenção porque concentram maior valor financeiro.</p>
+              <code class="formula-line">A: até 80% acumulado; B: até 95%; C: restante</code>
+              <p>Use o percentual acumulado após ordenar por valor mensal.</p>
+            </div>
+
+            <div class="process-step">
+              <h3><span class="step-number">4</span>Calcular a divergência de inventário</h3>
+              <p>A divergência mostra a diferença entre o que o sistema informa e o que foi contado fisicamente.</p>
+              <code class="formula-line">Divergência = estoque físico - estoque do sistema</code>
+              <p>Resultado negativo indica falta física em relação ao sistema. Resultado positivo indica sobra física.</p>
+            </div>
+
+            <div class="process-step">
+              <h3><span class="step-number">5</span>Calcular a acuracidade</h3>
+              <p>Acuracidade mede a confiabilidade do registro de estoque.</p>
+              <code class="formula-line">Acuracidade = (1 - |divergência| / estoque do sistema) × 100</code>
+              <p>Itens críticos ou de alto valor devem ter acuracidade próxima de 100%.</p>
+            </div>
+
+            <div class="process-step">
+              <h3><span class="step-number">6</span>Calcular a cobertura em dias</h3>
+              <p>A cobertura indica por quantos dias o estoque físico atende a demanda média.</p>
+              <code class="formula-line">Cobertura = estoque físico / demanda média diária</code>
+              <p>Quando a cobertura fica baixa, o item pode exigir reposição ou bloqueio de promessa de atendimento.</p>
+            </div>
+
+            <div class="process-step">
+              <h3><span class="step-number">7</span>Definir prioridades de ação</h3>
+              <p>Combine ABC, acuracidade, cobertura e criticidade. Um item B com baixa cobertura pode ser mais urgente que um item C com sobra física.</p>
+              <p>Classifique cada item em: recontar, investigar causa, repor, ajustar cadastro ou apenas monitorar.</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Entregável do aluno</h2>
+          <ol>
+            <li>Tabela com valor mensal, participação e curva ABC.</li>
+            <li>Tabela com divergência, acuracidade e cobertura em dias.</li>
+            <li>Lista de prioridades com justificativa técnica.</li>
+            <li>Recomendação final para compras, estoque e liderança operacional.</li>
+          </ol>
+        </section>
+      </article>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

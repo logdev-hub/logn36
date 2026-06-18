@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aula 01 - Controle de Saldos de Estoque</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="../index.html">UC 3 Estoques</a>
+      <nav>
+        <a href="../index.html">Portal do aluno</a>
+        <a href="../livro-aluno.html">Livro do Aluno</a>
+        <a href="../index.html#casos-complementares">Casos complementares</a>
+        <span class="sidebar-label">Aulas</span>
+        <a class="active" href="aula-01.html">Aula 01</a>
+        <a href="aula-02.html">Aula 02</a>
+        <a href="aula-03.html">Aula 03</a>
+        <a href="aula-04.html">Aula 04</a>
+        <a href="aula-05.html">Aula 05</a>
+        <a href="aula-06.html">Aula 06</a>
+        <a href="aula-07.html">Aula 07</a>
+        <a href="aula-08.html">Aula 08</a>
+        <a href="aula-09.html">Aula 09</a>
+        <a href="aula-10.html">Aula 10</a>
+        <a href="aula-11.html">Aula 11</a>
+        <a href="aula-12.html">Aula 12</a>
+        <a href="aula-13.html">Aula 13</a>
+        <a href="aula-14.html">Aula 14</a>
+        <a href="aula-15.html">Aula 15</a>
+        <a href="aula-16.html">Aula 16</a>
+        <a href="aula-17.html">Aula 17</a>
+        <a href="aula-18.html">Aula 18</a>
+        <a href="aula-19.html">Aula 19</a>
+        <a href="aula-20.html">Aula 20</a>
+        <a href="aula-21.html">Aula 21</a>
+        <span class="sidebar-label">Complementos</span>
+        <a href="../casos/caso-01-cafelab.html">Caso 1 - Cafelab</a>
+        <a href="../casos/caso-02-freshbox.html">Caso 2 - FreshBox</a>
+        <a href="../casos/caso-03-medlog.html">Caso 3 - MedLog</a>
+      </nav>
+    </aside>
+    <main class="main-content">
+    <div class="topbar">
+      <button class="btn btn-outline-light btn-sm nav-toggle" type="button" data-toggle-sidebar aria-label="Abrir menu">Menu</button>
+      <div>
+        <strong>Aula 01 - Controle de Saldos de Estoque</strong>
+        <small>Livro do Aluno | Técnico em Logistica [2026 - EAD] | LOG N36</small>
+      </div>
+      <div class="header-actions">
+        <a class="btn btn-outline-light btn-sm" href="../livro-aluno.html">Indice</a>
+        <button class="btn btn-warning btn-sm" type="button" data-print>Imprimir</button>
+      </div>
+    </div>
+      <section class="lesson-mentor">
+        <div class="lesson-mentor-inner">
+          <span class="eyebrow">Conversa com o autor</span>
+          <h1>Aula 01: Controle de Saldos de Estoque</h1>
+          <p>Nesta aula, você vai trabalhar Controle de Saldos de Estoque como ferramenta de decisao. Na rotina profissional de logística, esse tema ajuda você a defender decisoes com dados, reduzir retrabalho, evitar ruptura e comunicar riscos antes que eles virem custo.</p>
+          <div class="case-actions">
+            <a class="btn btn-primary" href="../slides/aula01.html">Ver slides</a>
+            
+            <a class="btn btn-outline-primary" href="../livro-aluno.html">Voltar ao índice</a>
+          </div>
+        </div>
+      </section>
+      <section class="content-band">
+        <div class="callout">
+          <strong>Como estudar está aula:</strong> leia o contexto, refaca os calculos, registre a evidencia no portifolio e responda: que decisao eu conseguiria justificar para meu supervisor usando controle de saldos de estoque?
+        </div>
+      </section>
+<article class="lesson-article" id="aula-01" data-lesson="1" data-topic="controle de saldos de estoque">
+      <header class="lesson-header">
+        <span class="eyebrow">Aula 01</span>
+        <h2>Controle de Saldos de Estoque</h2>
+        <p>Os alunos serão capazes de realizar o controle de saldo de estoque utilizando documentos e registros do período.</p>
+        <div class="badge-row"><span class="badge rounded-pill text-bg-light border">fundamentação operacional e linguagem comum da equipe</span><span class="badge rounded-pill text-bg-light border">controle de saldos</span><span class="badge rounded-pill text-bg-light border">Aula expositiva dialogada</span></div>
+      </header>
+      <section><h3>1. Identificação da Aula</h3><div class="table-responsive"><table class="table table-bordered align-middle"><thead><tr><th>Campo</th><th>Descrição</th></tr></thead><tbody><tr><td>Número da aula</td><td>Aula 01</td></tr><tr><td>Tema</td><td>Controle de Saldos de Estoque</td></tr><tr><td>Objetivos</td><td>Os alunos serão capazes de realizar o controle de saldo de estoque utilizando documentos e registros do período.</td></tr><tr><td>Competência</td><td>Executar os processos de gestão de estoques em situações reais de trabalho.</td></tr><tr><td>Indicadores</td><td>1 - 1. Realiza o controle de saldo de estoque, com base nos documentos e registros do período., com base nos documentos e registros do período.</td></tr><tr><td>Conhecimentos</td><td>Estoque: conceito, tipos e classificação de níveis.; Gestão de estoque: conceito e importância.; Controle de estoque: sistemas de informação, giro, cobertura, ruptura, cálculos de estoque (mínimo, médio, máximo, ponto de pedido, estoque de segurança).; Diferença entre saldo físico, saldo sistêmico, saldo disponível, saldo reservado e saldo bloqueado.; Kardex básico e saldo final por movimentação.; Diferença físico x sistema e cobertura em dias.</td></tr><tr><td>Habilidades</td><td>3 - - Interpretar documentos e rótulos de identificação de materiais., 5 - - Operar sistemas de informação de gestão de logística.</td></tr><tr><td>Atitudes e valores</td><td>3 - - Proatividade na resolução de problemas., 4 - - Responsabilidade e comprometimento com os acordos estabelecidos.</td></tr><tr><td>Recursos</td><td>Laboratório de informática, 7 - Softwares ou ERP, 4 - Projetor ou TV</td></tr><tr><td>Estratégias</td><td>Aula expositiva dialogada</td></tr><tr><td>Relação com Projeto Integrador</td><td>Projeto Integrador Técnico em Logística será ministrada somente no final do curso, ao longo das demais UCs serão desenvolvidos entregáveis que serão desenvolvidos pela turma. Estas aulas serão utilizadas para refinamento dos projetos desenvolvidos e organização para apresentações.</td></tr></tbody></table></div></section>
+      <section><h3>2. Situação-Problema de Abertura</h3>
+    <h4>Contexto</h4>
+    <p>A empresa fictícia <strong>LogiVale Distribuição</strong>, atuante em <strong>Centro de Distribuição</strong>, opera com alto volume de movimentações e precisa manter dados confiáveis para compras, armazenagem, separação e atendimento ao cliente. A aula coloca a turma no papel de equipe técnica responsável por transformar registros, documentos e indicadores em decisão operacional.</p>
+    <h4>Problema</h4>
+    <p>Na rotina do dia, o saldo sistêmico de itens de alto giro não coincide com o saldo físico observado no fim do turno. A situação exige análise objetiva, comunicação com áreas envolvidas e produção de evidência técnica, pois a decisão não pode depender apenas de opinião ou memória da equipe.</p>
+    <h4>Dados</h4>
+    <div class="table-responsive"><table class="table table-sm table-striped align-middle"><thead><tr><th>Dado operacional</th><th>Valor</th></tr></thead><tbody><tr><td>Saldo inicial</td><td>124</td></tr><tr><td>Entradas registradas</td><td>47</td></tr><tr><td>Saídas registradas</td><td>61</td></tr><tr><td>Ajustes pendentes</td><td>0</td></tr><tr><td>Demanda média diária</td><td>17</td></tr><tr><td>Lead time fornecedor</td><td>5 dias</td></tr><tr><td>Estoque de segurança</td><td>29</td></tr></tbody></table></div>
+    <div class="table-responsive"><table class="table table-sm table-striped align-middle"><thead><tr><th>SKU</th><th>Produto</th><th>Estoque sistema</th><th>Contagem física</th><th>Custo unitário</th></tr></thead><tbody><tr><td>SKU-1002</td><td>Filtro automotivo linha leve</td><td>67</td><td>67</td><td>R$ 19,25</td></tr><tr><td>SKU-1003</td><td>Creme hidratante 250 ml</td><td>89</td><td>91</td><td>R$ 26,00</td></tr><tr><td>SKU-1004</td><td>Luva nitrílica descartável</td><td>102</td><td>101</td><td>R$ 32,75</td></tr><tr><td>SKU-1005</td><td>Kit rolamento industrial</td><td>121</td><td>125</td><td>R$ 39,50</td></tr></tbody></table></div>
+    <h4>Impactos</h4>
+    <p>Quando esse problema não é tratado, a empresa pode vender sem estoque, comprar acima da necessidade, atrasar pedidos, ocupar endereços com itens de baixo giro, perder acuracidade e comprometer a confiança nos relatórios. Em operações profissionais, uma diferença pequena em quantidade pode representar alto impacto se o item for crítico, caro ou essencial para atendimento de pedidos prioritários.</p>
+    <h4>Perguntas provocadoras</h4>
+    <ul><li>Qual dado precisa ser validado antes de tomar decisão sobre controle de saldos?</li><li>Que documento comprova a movimentação e reduz risco de ajuste indevido?</li><li>Qual indicador mostra o impacto operacional e financeiro do problema?</li><li>Que decisão o técnico em logística pode recomendar com base nos dados?</li><li>Como o entregável desta aula fortalece o Projeto Integrador?</li></ul>
+    </section>
+      <section><h3>3. Fundamentação Teórica Completa</h3><p>Controlar saldos significa manter coerência entre o que entrou, o que saiu, o que foi ajustado e o que permanece disponível. Em um ambiente profissional, o saldo não é apenas um número em tela: ele orienta promessa de venda, separação, transferência interna, reposição, inventário e apuração de perdas. Por isso, todo lançamento deve estar ligado a um documento, a uma origem operacional e a uma responsabilidade definida.</p><p>Na prática logística, o controle de saldo combina registro sistêmico, conferência física e análise de exceções. O técnico precisa entender a diferença entre saldo disponível, saldo reservado, saldo bloqueado, saldo em trânsito e saldo avariado. Essa separação evita decisões erradas, como liberar um item reservado para outro pedido ou considerar disponível um lote retido por qualidade.</p><p>Os benefícios do controle correto aparecem em redução de ruptura, menor retrabalho na expedição, melhor planejamento de compras e aumento de confiabilidade entre áreas. A limitação mais comum é depender de lançamento manual tardio, principalmente quando a operação movimenta material antes de registrar no ERP ou WMS. Quando há atrasó de registro, o saldo perde valor gerencial mesmo que a contagem física esteja correta.</p><p>Em casos reais de centros de distribuição, melhorias simples como leitura de código de barras na doca, endereçamento padronizado e bloqueio automático de lote avariado reduzem divergências. O ganho não vem apenas da tecnologia; vem da disciplina de processo e da capacidade da equipe de interpretar o dado antes de agir.</p>
+    <h4>Conceitos centrais da aula</h4>
+    <p>Esta aula trabalha <strong>controle de saldos</strong> dentro da fase de <strong>fundamentação operacional e linguagem comum da equipe</strong>. O conceito precisa ser demonstrado em evidências observáveis: documento correto, registro consistente, cálculo justificado, decisão comunicada e melhoria incorporada ao Projeto Integrador.</p>
+    
+    <h4>Progressão técnica desta aula</h4>
+    <p>A sequência da UC retoma processos parecidos em momentos diferentes. Nesta aula, a retomada não deve repetir a mesma abordagem: ela precisa elevar a complexidade técnica, conectando fundamento, cálculo e decisão.</p>
+    <div class="table-responsive"><table class="table table-bordered align-middle"><thead><tr><th>Dimensão</th><th>Foco da aula</th></tr></thead><tbody><tr><td>Fundamento-chave</td><td>Diferença entre saldo físico, saldo sistêmico, saldo disponível, saldo reservado e saldo bloqueado.</td></tr><tr><td>Cálculo principal</td><td>Kardex básico e saldo final por movimentação.</td></tr><tr><td>Cálculo complementar</td><td>Diferença físico x sistema e cobertura em dias.</td></tr><tr><td>Decisão gerencial esperada</td><td>Liberar, bloquear ou investigar o SKU com base em evidência documentada.</td></tr></tbody></table></div>
+    
+    <h4>Aplicações práticas</h4>
+    <p>A aplicação profissional aparece quando a turma usa dados de produto, saldo, demanda, lead time, inventário e custo para tomar decisão. O foco não é memorizar uma fórmula, mas interpretar o resultado e justificar uma ação possível dentro de uma empresa real.</p>
+    <h4>Benefícios, limitações e cuidados</h4>
+    <p>O principal benefício é a redução de custo operacional por meio de estoque confiável, menor urgência, menos retrabalho e melhor atendimento. A principal limitação é a qualidade do dado: se a entrada, a saída, a contagem ou o cadastro estiverem errados, o indicador também ficará errado. Por isso, a competência combina técnica, processo, postura profissional e comunicação.</p>
+    </section>
+      <section><h3>4. Exemplos Profissionais</h3>
+            <article class="example-block">
+              <h4>Centro de Distribuição - LogiVale Distribuição</h4>
+              <p>No cenário de centro de distribuição, o item <strong>Filtro automotivo linha leve</strong> exige controle rigorosó porque sua falta afeta atendimento, separação e custo. A equipe usa o tema da aula para comparar documentos, analisar registros e decidir se deve ajustar saldo, solicitar reposição, recontar, investigar divergência ou parametrizar alerta no sistema.</p>
+              <p>A decisão profissional esperada é registrar a evidência, calcular o impacto e comunicar a área responsável com linguagem objetiva. O exemplo evita repetição de cenários e mostra que a mesma competência pode aparecer em realidades diferentes: operação de alto giro, item crítico, lote controlado, validade, importação ou abastecimento interno.</p>
+            </article>
+            
+            <article class="example-block">
+              <h4>Operador Logístico - Rota Sul Operações</h4>
+              <p>No cenário de operador logístico, o item <strong>Luva nitrílica descartável</strong> exige controle rigorosó porque sua falta afeta atendimento, separação e custo. A equipe usa o tema da aula para comparar documentos, analisar registros e decidir se deve ajustar saldo, solicitar reposição, recontar, investigar divergência ou parametrizar alerta no sistema.</p>
+              <p>A decisão profissional esperada é registrar a evidência, calcular o impacto e comunicar a área responsável com linguagem objetiva. O exemplo evita repetição de cenários e mostra que a mesma competência pode aparecer em realidades diferentes: operação de alto giro, item crítico, lote controlado, validade, importação ou abastecimento interno.</p>
+            </article>
+            
+            <article class="example-block">
+              <h4>E-commerce - CliqueEntrega Market</h4>
+              <p>No cenário de e-commerce, o item <strong>Arroz tipo 1 pacote 5 kg</strong> exige controle rigorosó porque sua falta afeta atendimento, separação e custo. A equipe usa o tema da aula para comparar documentos, analisar registros e decidir se deve ajustar saldo, solicitar reposição, recontar, investigar divergência ou parametrizar alerta no sistema.</p>
+              <p>A decisão profissional esperada é registrar a evidência, calcular o impacto e comunicar a área responsável com linguagem objetiva. O exemplo evita repetição de cenários e mostra que a mesma competência pode aparecer em realidades diferentes: operação de alto giro, item crítico, lote controlado, validade, importação ou abastecimento interno.</p>
+            </article>
+            </section>
+      <section><h3>5. Cálculos Passo a Passo</h3>
+    <h4>Fórmula</h4>
+    <p><code>Saldo final = saldo inicial + entradas - saídas ± ajustes</code></p>
+    <p><code>Cobertura em dias = saldo disponível / demanda média diária</code></p>
+    
+    <div class="info-box">
+      <p><strong>Cálculo principal da aula:</strong> Kardex básico e saldo final por movimentação.</p>
+      <p><strong>Cálculo complementar:</strong> Diferença físico x sistema e cobertura em dias.</p>
+      <p><strong>Decisão que o cálculo deve sustentar:</strong> Liberar, bloquear ou investigar o SKU com base em evidência documentada.</p>
+    </div>
+    
+    <h4>Variáveis</h4>
+    <div class="table-responsive"><table class="table table-sm table-striped align-middle"><thead><tr><th>Variável</th><th>Valor</th></tr></thead><tbody><tr><td>Saldo inicial</td><td>124</td></tr><tr><td>Entradas</td><td>47</td></tr><tr><td>Saídas</td><td>61</td></tr><tr><td>Ajustes</td><td>0</td></tr></tbody></table></div>
+    <h4>Explicação</h4>
+    <p>A fórmula organiza a decisão para que a equipe não dependa de impressão subjetiva. Cada variável precisa vir de documento, sistema ou contagem validada; caso contrário, o cálculo pode parecer correto, mas apoiar uma decisão errada.</p>
+    <h4>Aplicação prática</h4>
+    <p>O cálculo será usado para decidir se a operação deve corrigir registros, bloquear movimentações sem documento e priorizar itens com risco de ruptura. O resultado deve ser registrado no artefato da aula e defendido oralmente pela equipe.</p>
+    <h4>Resolução passo a passo</h4>
+    <ul><li>Começar pelo saldo inicial: 124 unidades.</li><li>Somar entradas registradas: 124 + 47 = 171.</li><li>Subtrair saídas: 171 - 61 = 110.</li><li>Aplicar ajustes documentados: resultado = 110 unidades.</li></ul>
+    <h4>Interpretação do resultado</h4>
+    <p>Resultado calculado: <strong>110</strong>. O número precisa ser comparado com política interna, criticidade do item e impacto no cliente. Um resultado aceitável em item barato e substituível pode ser inaceitável em item hospitalar, importado ou essencial à produção.</p>
+    <h4>Decisão gerencial</h4>
+    <p>Se a contagem física for menor que o saldo final calculado, a operação deve bloquear nova promessa de venda até investigar a diferença.</p>
+    <h4>Exemplos completos com cálculos e detalhamento</h4>
+    <p>Os três exemplos abaixo aprofundam a aplicação da aula em situações corporativas. Cada exemplo apresenta contexto, fórmula, variáveis, resolução passo a passo, interpretação, decisão gerencial e estrutura de planilha para prática em Excel ou Google Sheets.</p>
+    
+    <article class="calc-example">
+      <h4>Exemplo completo 1 - Kardex e saldo final do SKU</h4>
+      <p><strong>Contexto profissional:</strong> A LogiVale Distribuição, no contexto de centro de distribuição, precisa conferir o saldo final do item Filtro automotivo linha leve antes da liberação de pedidos do segundo turno.</p>
+      <p><strong>Fórmula:</strong> <code>Saldo final = saldo inicial + entradas - saídas ± ajustes</code></p>
+      <p><strong>Variáveis:</strong></p>
+      <div class="table-responsive"><table class="table table-sm table-striped align-middle"><thead><tr><th>Variável</th><th>Valor</th><th>Origem do dado</th></tr></thead><tbody><tr><td>Saldo inicial</td><td>83</td><td>Kardex do início do dia</td></tr><tr><td>Entradas</td><td>32</td><td>Notas recebidas e conferidas</td></tr><tr><td>Saídas</td><td>46</td><td>Pedidos separados e baixados</td></tr><tr><td>Ajustes</td><td>-2</td><td>Ajuste documentado pela conferência</td></tr></tbody></table></div>
+      <p><strong>Resolução passo a passo:</strong></p>
+      <ul><li>Registrar o saldo inicial: 83 unidades.</li><li>Somar entradas: 83 + 32 = 115 unidades.</li><li>Subtrair saídas: 115 - 46 = 69 unidades.</li><li>Aplicar ajuste documentado: 69 + (-2) = 67 unidades.</li></ul>
+      <p><strong>Interpretação do resultado:</strong> O saldo final correto é 67 unidades. Esse número deve coincidir com o ERP/WMS antes da equipe liberar novas promessas de atendimento.</p>
+      <p><strong>Decisão gerencial:</strong> Se o saldo físico divergir do resultado calculado, bloquear o SKU para nova separação, fazer contagem dirigida e registrar ocorrência no portfólio do PI.</p>
+      <p><strong>Estrutura no Excel ou Google Sheets:</strong></p>
+      <div class="table-responsive"><table class="table table-sm table-striped align-middle"><thead><tr><th>Célula</th><th>Campo</th><th>Fórmula ou dado</th></tr></thead><tbody><tr><td>A2</td><td>Saldo inicial</td><td>83</td></tr><tr><td>B2</td><td>Entradas</td><td>32</td></tr><tr><td>C2</td><td>Saídas</td><td>46</td></tr><tr><td>D2</td><td>Ajustes</td><td>-2</td></tr><tr><td>E2</td><td>Saldo final</td><td>=A2+B2-C2+D2</td></tr></tbody></table></div>
+    </article>
+    
+    <article class="calc-example">
+      <h4>Exemplo completo 2 - Cobertura de estoque em dias</h4>
+      <p><strong>Contexto profissional:</strong> O item Filtro automotivo linha leve tem demanda média conhecida e a supervisão quer saber por quantos dias o saldo calculado sustenta a operação.</p>
+      <p><strong>Fórmula:</strong> <code>Cobertura em dias = saldo disponível / demanda média diária</code></p>
+      <p><strong>Variáveis:</strong></p>
+      <div class="table-responsive"><table class="table table-sm table-striped align-middle"><thead><tr><th>Variável</th><th>Valor</th><th>Origem do dado</th></tr></thead><tbody><tr><td>Saldo disponível</td><td>67</td><td>Saldo final validado no Kardex</td></tr><tr><td>Demanda média diária</td><td>17</td><td>Histórico de consumo dos últimos 30 dias</td></tr></tbody></table></div>
+      <p><strong>Resolução passo a passo:</strong></p>
+      <ul><li>Usar o saldo disponível calculado no Kardex: 67 unidades.</li><li>Identificar a demanda média diária: 17 unidades/dia.</li><li>Dividir saldo pela demanda: 67 / 17 = 3.94 dias.</li><li>Comparar a cobertura com o lead time e com a política de estoque mínimo.</li></ul>
+      <p><strong>Interpretação do resultado:</strong> A cobertura é de 3.94 dias. Se o fornecedor leva 5 dias, a cobertura precisa ser maior que o lead time somado à margem de segurança.</p>
+      <p><strong>Decisão gerencial:</strong> Quando a cobertura ficar próxima do lead time, acionar reposição preventiva e sinalizar risco de ruptura no dashboard.</p>
+      <p><strong>Estrutura no Excel ou Google Sheets:</strong></p>
+      <div class="table-responsive"><table class="table table-sm table-striped align-middle"><thead><tr><th>Célula</th><th>Campo</th><th>Fórmula ou dado</th></tr></thead><tbody><tr><td>A2</td><td>Saldo disponível</td><td>67</td></tr><tr><td>B2</td><td>Demanda média diária</td><td>17</td></tr><tr><td>C2</td><td>Cobertura em dias</td><td>=A2/B2</td></tr><tr><td>D2</td><td>Lead time</td><td>5</td></tr><tr><td>E2</td><td>Status</td><td>=SE(C2&lt;=D2;&quot;Risco&quot;;&quot;Controlado&quot;)</td></tr></tbody></table></div>
+    </article>
+    
+    <article class="calc-example">
+      <h4>Exemplo completo 3 - Giro de estoque e saldo reservado</h4>
+      <p><strong>Contexto profissional:</strong> A equipe encontrou reservas pendentes para o item Luva nitrílica descartável e precisa avaliar se o saldo disponível e o giro ainda sustentam os pedidos em carteira.</p>
+      <p><strong>Fórmula:</strong> <code>Giro = consumo do período / estoque médio; Saldo disponível = saldo sistêmico - reservas</code></p>
+      <p><strong>Variáveis:</strong></p>
+      <div class="table-responsive"><table class="table table-sm table-striped align-middle"><thead><tr><th>Variável</th><th>Valor</th><th>Origem do dado</th></tr></thead><tbody><tr><td>Consumo no período</td><td>54</td><td>Saídas confirmadas no ERP/WMS</td></tr><tr><td>Estoque inicial</td><td>101</td><td>Saldo inicial do período</td></tr><tr><td>Estoque final</td><td>89</td><td>Saldo sistêmico atual</td></tr><tr><td>Reservas</td><td>18</td><td>Pedidos já prometidos</td></tr><tr><td>Saldo sistêmico do item reservado</td><td>102</td><td>Consulta do ERP/WMS</td></tr></tbody></table></div>
+      <p><strong>Resolução passo a passo:</strong></p>
+      <ul><li>Calcular estoque médio do item de referência: (101 + 89) / 2 = 95.00.</li><li>Calcular giro: 54 / 95.00 = 0.57 vez(es) no período.</li><li>Calcular saldo disponível com reservas: 102 - 18 = 84 unidades.</li><li>Calcular percentual reservado: 18 / 102 x 100 = 17.65%.</li></ul>
+      <p><strong>Interpretação do resultado:</strong> O giro de 0.57 mostra a velocidade de consumo. O saldo disponível real é 84 unidades, pois parte do estoque já está comprometida.</p>
+      <p><strong>Decisão gerencial:</strong> Atualizar o painel separando saldo total, saldo reservado e saldo disponível; compras e vendas não devem decidir usando apenas o saldo total.</p>
+      <p><strong>Estrutura no Excel ou Google Sheets:</strong></p>
+      <div class="table-responsive"><table class="table table-sm table-striped align-middle"><thead><tr><th>Célula</th><th>Campo</th><th>Fórmula ou dado</th></tr></thead><tbody><tr><td>A2</td><td>Consumo</td><td>54</td></tr><tr><td>B2</td><td>Estoque inicial</td><td>101</td></tr><tr><td>C2</td><td>Estoque final</td><td>89</td></tr><tr><td>D2</td><td>Estoque médio</td><td>=MÉDIA(B2;C2)</td></tr><tr><td>E2</td><td>Giro</td><td>=A2/D2</td></tr><tr><td>F2</td><td>Reservas</td><td>18</td></tr><tr><td>G2</td><td>Saldo disponível</td><td>=C2-F2</td></tr></tbody></table></div>
+    </article>
+    
+    <h4>Atividade prática em Excel ou Google Sheets</h4>
+    <p>A equipe deve montar uma planilha simples, com cabeçalhos claros, validação de unidade de medida e célula de decisão. O objetivo é transformar o cálculo em ferramenta reutilizável para o Projeto Integrador.</p>
+    <div class="table-responsive"><table class="table table-sm table-striped align-middle"><thead><tr><th>Célula</th><th>Campo</th><th>Fórmula ou dado</th></tr></thead><tbody><tr><td>A2</td><td>Saldo inicial</td><td>124</td></tr><tr><td>B2</td><td>Entradas</td><td>47</td></tr><tr><td>C2</td><td>Saídas</td><td>61</td></tr><tr><td>D2</td><td>Ajustes</td><td>0</td></tr><tr><td>E2</td><td>Saldo final</td><td>=A2+B2-C2+D2</td></tr></tbody></table></div>
+    </section>
+      
+      <section><h3>6. Tabelas e Dados Realistas</h3>
+    <p>A tabela abaixo usa dados realistas para prática profissional. Os números são fictícios para fins didáticos, mas seguem volumes e variações compatíveis com operações de estoque de pequeno e médio porte.</p>
+    <div class="table-responsive"><table class="table table-sm table-striped align-middle"><thead><tr><th>SKU</th><th>Produto</th><th>Un.</th><th>Inicial</th><th>Entradas</th><th>Saídas</th><th>Ajustes</th><th>Sistema</th><th>Físico</th><th>Custo unit.</th></tr></thead><tbody><tr><td>SKU-1002</td><td>Filtro automotivo linha leve</td><td>un</td><td>83</td><td>32</td><td>46</td><td>-2</td><td>67</td><td>67</td><td>R$ 19,25</td></tr><tr><td>SKU-1003</td><td>Creme hidratante 250 ml</td><td>cx</td><td>101</td><td>39</td><td>54</td><td>3</td><td>89</td><td>91</td><td>R$ 26,00</td></tr><tr><td>SKU-1004</td><td>Luva nitrílica descartável</td><td>cx</td><td>119</td><td>46</td><td>62</td><td>-1</td><td>102</td><td>101</td><td>R$ 32,75</td></tr><tr><td>SKU-1005</td><td>Kit rolamento industrial</td><td>un</td><td>137</td><td>53</td><td>70</td><td>1</td><td>121</td><td>125</td><td>R$ 39,50</td></tr><tr><td>SKU-1006</td><td>Arroz tipo 1 pacote 5 kg</td><td>fd</td><td>155</td><td>25</td><td>30</td><td>0</td><td>150</td><td>147</td><td>R$ 46,25</td></tr></tbody></table></div>
+    <p>Ao trabalhar com a tabela, a turma deve identificar inconsistências, calcular indicadores, justificar decisões e registrar evidências. O uso de dados tabulares aproxima a aula da rotina de ERP, WMS e planilhas corporativas.</p>
+    </section>
+      <section><h3>7. Documentos e Checklists do Processo</h3>
+    <h4>Documento principal da aula</h4>
+    <p><strong>Kardex diário e ficha de movimentação</strong>. Este documento formaliza o processo trabalhado na aula e serve como evidência operacional para o Projeto Integrador.</p>
+    <h4>Campos mínimos do documento</h4>
+    <ul><li>Aula, data, turma, equipe e responsável pelo registro.</li><li>SKU, descrição, unidade de medida, endereço e família do item.</li><li>Origem dos dados: documento, ERP/WMS, contagem física ou planilha.</li><li>Cálculo principal: Kardex básico e saldo final por movimentação..</li><li>Cálculo complementar: Diferença físico x sistema e cobertura em dias..</li><li>Decisão gerencial esperada: Liberar, bloquear ou investigar o SKU com base em evidência documentada..</li><li>Evidência anexada e assinatura ou validação do responsável.</li><li>Saldo inicial, entradas, saídas, ajustes, reservas, bloqueios e saldo disponível.</li><li>Documento de origem da movimentação: nota fiscal, requisição, romaneio ou autorização de ajuste.</li></ul>
+    <h4>Checklist do processo</h4>
+    <div class="table-responsive"><table class="table table-bordered align-middle"><thead><tr><th>Momento</th><th>Itens de verificação</th></tr></thead><tbody><tr><td>Antes do processo</td><td>Confirmar objetivo da aula e documento que será produzido.<br>Verificar se os dados possuem origem rastreável.<br>Checar unidade de medida, SKU, endereço e período analisado.<br>Separar saldo sistêmico, físico, reservado, bloqueado e em trânsito.</td></tr><tr><td>Durante o processo</td><td>Substituir valores na fórmula antes de interpretar o resultado.<br>Conferir se o cálculo usa saldo disponível, não apenas saldo físico.<br>Registrar evidência, responsável e prazo da decisão.<br>Conferir entradas, saídas e ajustes contra documentos de origem.</td></tr><tr><td>Depois do processo</td><td>Comparar resultado com política interna, criticidade e impacto no cliente.<br>Anexar planilha, documento e conclusão ao portfólio do Projeto Integrador.<br>Listar uma fragilidade do processo e uma melhoria para a próxima aula.<br>Bloquear promessa de atendimento se o saldo calculado não for confiável.</td></tr></tbody></table></div>
+    <h4>Controle de versão e evidências</h4>
+    <p>Ao final da aula, a equipe deve salvar a versão do documento, anexar a planilha de cálculo, registrar quem validou os dados e indicar qual decisão foi tomada. Quando houver divergência ou reposição, o documento deve trazer responsável e prazo de acompanhamento.</p>
+    
+    </section>
+      <section><h3>8. Estudo de Caso Profissional</h3>
+    <h4>Empresa</h4>
+    <p><strong>Farmalog Saúde</strong>, empresa fictícia do segmento de farmácia, com operação em dois turnos e equipe de armazenagem responsável por recebimento, separação, inventário e relatórios.</p>
+    <h4>Contexto</h4>
+    <p>A coordenação solicitou um diagnóstico sobre controle de saldos. O estoque possui itens de giro rápido, itens críticos e materiais com custo unitário elevado. A gestão quer reduzir custos sem criar ruptura ou excesso.</p>
+    <h4>Problema</h4>
+    <p>Nos últimos dias, relatórios apontaram divergências entre registros e operação. O time precisa transformar dados em decisão, usando o indicador principal da aula: <strong>Saldo contábil, saldo físico, giro, cobertura e ruptura</strong>.</p>
+    <h4>Dados</h4>
+    <div class="table-responsive"><table class="table table-sm table-striped align-middle"><thead><tr><th>Indicador</th><th>Valor</th></tr></thead><tbody><tr><td>Demanda média diária</td><td>17</td></tr><tr><td>Lead time</td><td>5 dias</td></tr><tr><td>Saldo final calculado</td><td>110</td></tr><tr><td>Ponto de pedido</td><td>114</td></tr><tr><td>Acuracidade estimada</td><td>92,68%</td></tr><tr><td>Custo unitário de referência</td><td>R$ 19,55</td></tr></tbody></table></div>
+    <h4>Desafio</h4>
+    <p>Construir uma recomendação técnica que explique o problema, calcule o impacto, apresente ação imediata e proponha prevenção para o próximo ciclo operacional.</p>
+    <h4>Perguntas</h4>
+    <ul><li>Qual é o dado mais crítico para validar antes da decisão?</li><li>Que cálculo comprova a necessidade de ação?</li><li>Que documento ou evidência deve acompanhar a recomendação?</li><li>Qual risco existe se a empresa adiar a decisão?</li><li>Como o artefato da aula será incorporado ao Projeto Integrador?</li></ul>
+    <h4>Entregável esperado</h4>
+    <p>Relatório de uma página com diagnóstico, cálculo, decisão, responsável, prazo e evidência anexada. O relatório deve ser anexado ao portfólio do Projeto Integrador.</p>
+    </section>
+      
+      <section><h3>10. Exercícios</h3>
+    <h4>Exercícios objetivos</h4>
+    
+        <div class="question">
+          <p><strong>1.</strong> Na PeçaCerta Autopeças, qual evidência dá maior suporte ao processo de controle de saldos?</p>
+          <ol type="A">
+            <li>Relatório sem data e sem responsável.</li><li>Registro validado com documento, quantidade, item, endereço e responsável.</li><li>Comentário verbal feito no fim do turno.</li><li>Mensagem informal sem vínculo com o sistema.</li><li>Estimativa visual sem contagem ou histórico.</li>
+          </ol>
+        </div>
+        
+        <div class="question">
+          <p><strong>2.</strong> Qual indicador deve ser acompanhado quando a aula trata de Saldo contábil, saldo físico, giro, cobertura e ruptura?</p>
+          <ol type="A">
+            <li>Opinião da equipe sobre o item mais importante.</li><li>Quantidade total comprada no último mês sem comparação com consumo.</li><li>Indicador calculado com fórmula declarada, origem dos dados e meta de comparação.</li><li>Cor da etiqueta do produto no endereço.</li><li>Número de reuniões realizadas sobre o tema.</li>
+          </ol>
+        </div>
+        
+        <div class="question">
+          <p><strong>3.</strong> Quando uma movimentação física ocorre antes do registro sistêmico, qual risco aumenta?</p>
+          <ol type="A">
+            <li>O estoque de segurança aumenta automaticamente.</li><li>O lead time do fornecedor deixa de existir.</li><li>A demanda média diária se torna sempre igual a zero.</li><li>O sistema passa a orientar decisões com saldo diferente da realidade operacional.</li><li>A contagem física perde necessidade de conferência.</li>
+          </ol>
+        </div>
+        
+        <div class="question">
+          <p><strong>4.</strong> Qual atitude profissional reduz divergências durante a rotina de estoque?</p>
+          <ol type="A">
+            <li>Ajustar saldos no fim do mês sem investigar causa.</li><li>Usar sempre a estimativa visual do operador.</li><li>Evitar comunicação com compras e expedição.</li><li>Priorizar apenas itens baratos para simplificar o controle.</li><li>Registrar movimentações no momento correto e anexar evidência rastreável.</li>
+          </ol>
+        </div>
+        
+        <div class="question">
+          <p><strong>5.</strong> Qual entrega deve compor o portfólio do Projeto Integrador ao final da aula?</p>
+          <ol type="A">
+            <li>Artefato com dados utilizados, fórmula aplicada, decisão tomada e risco mitigado.</li><li>Imagem decorativa do estoque sem análise.</li><li>Lista de presença da atividade em grupo.</li><li>Texto genérico sem cálculo nem evidência.</li><li>Print do sistema sem identificação do problema.</li>
+          </ol>
+        </div>
+        
+    <h4>Exercícios discursivos</h4>
+    <ul><li>Explique como controle de saldos contribui para otimizar e reduzir custos das operações.</li><li>Descreva o papel do técnico em logística quando o indicador principal da aula apresenta resultado fora da meta.</li><li>Relacione a situação-problema da aula com uma evidência observável de aprendizagem.</li></ul>
+    <h4>Exercícios com cálculos</h4>
+    <ul><li>Usando a fórmula Saldo final = saldo inicial + entradas - saídas ± ajustes, monte o cálculo com os dados da situação-problema e justifique a decisão.</li><li>Aplique também Cobertura em dias = saldo disponível / demanda média diária e interprete o resultado para a gestão.</li><li>Monte uma planilha com pelo menos cinco produtos, calcule o indicador da aula e destaque em amarelo os itens que exigem ação.</li></ul>
+    </section>
+      
+      <section><h3>12. Atividades em Grupo</h3>
+    <article class="activity">
+      <h4>Atividade 1 - Sala de Situação Controle De Saldos</h4>
+      <p><strong>Objetivo:</strong> analisar uma ocorrência de controle de saldos e defender uma decisão técnica com evidências.</p>
+      <p><strong>Tempo:</strong> 50 minutos. <strong>Recursos:</strong> dados da aula, planilha, quadro branco e painel do portal.</p>
+      <p><strong>Formação dos grupos:</strong> equipes de 4 a 5 estudantes, com papéis de analista, conferente, comprador, líder operacional e relator.</p>
+      <p><strong>Passo a passo:</strong> ler a ocorrência, validar dados, aplicar cálculo, definir decisão, preparar justificativa e apresentar em até 4 minutos.</p>
+      <p><strong>Entregável:</strong> registro técnico com cálculo, decisão e responsável. <strong>Critérios:</strong> evidência, coerência, comunicação e uso correto dos indicadores.</p>
+    </article>
+    <article class="activity">
+      <h4>Atividade 2 - Comitê Operacional Hospital VidaPlena</h4>
+      <p><strong>Objetivo:</strong> simular uma reunião de operação em hospital, negociando prioridades entre estoque, compras, armazenagem e atendimento.</p>
+      <p><strong>Tempo:</strong> 60 minutos. <strong>Recursos:</strong> cartões de decisão, dados de produtos, modelo de relatório e computador ou celular.</p>
+      <p><strong>Formação dos grupos:</strong> metade da turma atua como operação e metade como gestão; depois os papéis são trocados.</p>
+      <p><strong>Passo a passo:</strong> cada grupo recebe restrição de custo, prazo e nível de serviço; propõe uma decisão; confronta a proposta com dados; ajusta o plano e registra o aprendizado.</p>
+      <p><strong>Entregável:</strong> ata objetiva da decisão com riscos e próximos passos. <strong>Critérios:</strong> negociação, uso de dados, postura profissional e aderência ao PI.</p>
+    </article>
+    </section>
+      
+      <section><h3>14. Mini Projeto da Aula</h3>
+    <p>O mini projeto da aula é o artefato <strong>Kardex digital com entradas, saídas, ajustes e saldo final validado</strong>. Ele deve conter cabeçalho, objetivo, dados utilizados, fórmula aplicada, decisão tomada, risco mitigado e evidência anexada. O artefato não deve ser tratado como tarefa isolada: ele compõe o portfólio evolutivo do Projeto Integrador e será usado na defesa final da UC.</p>
+    <p>Critérios mínimos: informação rastreável, linguagem profissional, cálculo conferível, conclusão objetiva e vínculo com redução de custos operacionais.</p>
+    </section>
+      <section><h3>15. Atividades Complementares</h3>
+    <ul>
+      <li><strong>Pesquisa:</strong> localizar um procedimento real ou modelo empresarial relacionado a controle de saldos e comparar com o processo da aula.</li>
+      <li><strong>Exercício extra:</strong> criar uma nova linha de produto na planilha e recalcular o indicador principal com justificativa.</li>
+      <li><strong>Debate:</strong> discutir quando o menor estoque reduz custo e quando ele aumenta risco operacional.</li>
+      <li><strong>Análise crítica:</strong> apontar três fragilidades do processo simulado e propor controles simples.</li>
+      <li><strong>Atividade para casa:</strong> registrar no portfólio uma evidência de aprendizagem e uma dúvida técnica para a próxima aula.</li>
+    </ul>
+    </section>
+      <section><h3>16. Box Saiba Mais</h3>
+    <div class="info-box saiba">
+      <p><strong>Curiosidade:</strong> em operações maduras, pequenos alertas de estoque evitam grandes paradas porque a decisão acontece antes da ruptura.</p>
+      <p><strong>Mercado:</strong> empresas valorizam profissionais que unem domínio operacional, planilha, ERP/WMS e comunicação com compras, vendas e produção.</p>
+      <p><strong>Tecnologia:</strong> leitores de código de barras, RFID, WMS e painéis de BI ampliam visibilidade, mas continuam dependentes de processo disciplinado.</p>
+      <p><strong>Dica profissional:</strong> ao apresentar controle de saldos, sempre leve número, evidência e recomendação. Essa combinação aumenta credibilidade técnica.</p>
+    </div>
+    </section>
+      <section><h3>17. Box Erros Comuns</h3>
+    <div class="info-box erros">
+      <p><strong>Erro:</strong> Registrar a saída somente no fim do turno, depois que o produto já saiu fisicamente.</p>
+      <p><strong>Consequência:</strong> O sistema mostra saldo maior que o estoque real, gerando promessa de atendimento sem produto disponível.</p>
+      <p><strong>Como evitar:</strong> Padronizar lançamento no momento da movimentação e exigir documento de origem para cada ajuste.</p>
+    </div>
+    </section>
+      <section><h3>18. IA Aplicada à Logística</h3>
+    <h4>Como usar IA</h4>
+    <p>ChatGPT, Copilot, Gemini e Claude podem apoiar leitura de dados, organização de hipóteses, revisão de relatórios e simulação de perguntas de gestão. Power BI pode transformar os dados em painel visual. A IA deve apoiar análise e comunicação; a decisão continua exigindo validação humana, conferência de documentos e responsabilidade profissional.</p>
+    <h4>Prompt exemplo</h4>
+    <pre class="prompt"><code>Atue como analista de estoque. Análise os dados da Aula 1 sobre Controle de Saldos de Estoque. Use a fórmula Saldo final = saldo inicial + entradas - saídas ± ajustes, identifique riscos, explique a decisão e gere um relatório curto para o Projeto Integrador.</code></pre>
+    <h4>Aplicação prática</h4>
+    <p>A turma deve usar IA para conferir consistência de lançamentos e gerar alertas sobre saldos negativos ou consumos atípicos. Depois precisa comparar a resposta da ferramenta com os dados originais, corrigir inconsistências e registrar quais recomendações foram aceitas ou descartadas. Esse registro desenvolve pensamento crítico e evita dependência automática da ferramenta.</p>
+    </section>
+      <section><h3>19. Fechamento da Aula</h3>
+    <p><strong>Resumo:</strong> a aula consolidou controle de saldos como processo técnico de gestão de estoques, conectado a documentos, sistemas, indicadores e decisão profissional.</p>
+    <p><strong>Reflexão:</strong> o grupo deve responder: que decisão eu consigo defender com dados, e que evidência comprova minha decisão?</p>
+    <p><strong>Conexão com próxima aula:</strong> Na próxima aula, a turma avança para o próximo processo da sequência original, mantendo o portfólio do PI em evolução.</p>
+    <p><strong>Evidência de aprendizagem:</strong> artefato validado, cálculo resolvido, estudo de caso respondido e participação na atividade em grupo.</p>
+    <p><strong>Registro para portfólio:</strong> anexar o mini projeto da aula, a planilha utilizada e uma breve autoavaliação sobre a competência desenvolvida.</p>
+    </section>
+      <section><h3>Banco de Questões da Aula</h3>
+    <h4>Objetivas - 10 questões</h4>
+    
+        <div class="question">
+          <p><strong>1.</strong> Qual ação representa melhor uma decisão baseada em dados sobre controle de saldos?</p>
+          <ol type="A">
+            <li>Decidir com base apenas na experiência do operador mais antigo.</li><li>Esperar o próximo inventário geral para tratar qualquer problema.</li><li>Registrar ajuste genérico para que o painel volte à meta.</li><li>Conferir documento, sistema, cálculo, impacto e responsável antes da ação.</li><li>Priorizar sempre o item de menor custo unitário.</li>
+          </ol>
+        </div>
+        
+        <div class="question">
+          <p><strong>2.</strong> Qual alternativa reduz o risco de ruptura sem criar excessó desnecessário?</p>
+          <ol type="A">
+            <li>Decidir com base apenas na experiência do operador mais antigo.</li><li>Esperar o próximo inventário geral para tratar qualquer problema.</li><li>Registrar ajuste genérico para que o painel volte à meta.</li><li>Priorizar sempre o item de menor custo unitário.</li><li>Conferir documento, sistema, cálculo, impacto e responsável antes da ação.</li>
+          </ol>
+        </div>
+        
+        <div class="question">
+          <p><strong>3.</strong> Qual evidência deve ser consultada antes de ajustar saldo no sistema?</p>
+          <ol type="A">
+            <li>Conferir documento, sistema, cálculo, impacto e responsável antes da ação.</li><li>Decidir com base apenas na experiência do operador mais antigo.</li><li>Esperar o próximo inventário geral para tratar qualquer problema.</li><li>Registrar ajuste genérico para que o painel volte à meta.</li><li>Priorizar sempre o item de menor custo unitário.</li>
+          </ol>
+        </div>
+        
+        <div class="question">
+          <p><strong>4.</strong> Qual indicador está mais conectado ao controle profissional desta aula?</p>
+          <ol type="A">
+            <li>Decidir com base apenas na experiência do operador mais antigo.</li><li>Conferir documento, sistema, cálculo, impacto e responsável antes da ação.</li><li>Esperar o próximo inventário geral para tratar qualquer problema.</li><li>Registrar ajuste genérico para que o painel volte à meta.</li><li>Priorizar sempre o item de menor custo unitário.</li>
+          </ol>
+        </div>
+        
+        <div class="question">
+          <p><strong>5.</strong> Qual comportamento profissional melhora a confiabilidade do estoque?</p>
+          <ol type="A">
+            <li>Decidir com base apenas na experiência do operador mais antigo.</li><li>Esperar o próximo inventário geral para tratar qualquer problema.</li><li>Conferir documento, sistema, cálculo, impacto e responsável antes da ação.</li><li>Registrar ajuste genérico para que o painel volte à meta.</li><li>Priorizar sempre o item de menor custo unitário.</li>
+          </ol>
+        </div>
+        
+        <div class="question">
+          <p><strong>6.</strong> Na empresa BellaCare Cosméticos, qual prática fortalece a comunicação entre estoque e compras?</p>
+          <ol type="A">
+            <li>Decidir com base apenas na experiência do operador mais antigo.</li><li>Esperar o próximo inventário geral para tratar qualquer problema.</li><li>Registrar ajuste genérico para que o painel volte à meta.</li><li>Conferir documento, sistema, cálculo, impacto e responsável antes da ação.</li><li>Priorizar sempre o item de menor custo unitário.</li>
+          </ol>
+        </div>
+        
+        <div class="question">
+          <p><strong>7.</strong> Qual análise diferencia sintoma de causa raiz?</p>
+          <ol type="A">
+            <li>Decidir com base apenas na experiência do operador mais antigo.</li><li>Esperar o próximo inventário geral para tratar qualquer problema.</li><li>Registrar ajuste genérico para que o painel volte à meta.</li><li>Priorizar sempre o item de menor custo unitário.</li><li>Conferir documento, sistema, cálculo, impacto e responsável antes da ação.</li>
+          </ol>
+        </div>
+        
+        <div class="question">
+          <p><strong>8.</strong> Qual item deve ter prioridade em uma rotina de contagem cíclica?</p>
+          <ol type="A">
+            <li>Conferir documento, sistema, cálculo, impacto e responsável antes da ação.</li><li>Decidir com base apenas na experiência do operador mais antigo.</li><li>Esperar o próximo inventário geral para tratar qualquer problema.</li><li>Registrar ajuste genérico para que o painel volte à meta.</li><li>Priorizar sempre o item de menor custo unitário.</li>
+          </ol>
+        </div>
+        
+        <div class="question">
+          <p><strong>9.</strong> Qual cuidado evita erro ao usar planilhas de estoque?</p>
+          <ol type="A">
+            <li>Decidir com base apenas na experiência do operador mais antigo.</li><li>Conferir documento, sistema, cálculo, impacto e responsável antes da ação.</li><li>Esperar o próximo inventário geral para tratar qualquer problema.</li><li>Registrar ajuste genérico para que o painel volte à meta.</li><li>Priorizar sempre o item de menor custo unitário.</li>
+          </ol>
+        </div>
+        
+        <div class="question">
+          <p><strong>10.</strong> Qual entrega comprova aprendizagem por competência nesta aula?</p>
+          <ol type="A">
+            <li>Decidir com base apenas na experiência do operador mais antigo.</li><li>Esperar o próximo inventário geral para tratar qualquer problema.</li><li>Conferir documento, sistema, cálculo, impacto e responsável antes da ação.</li><li>Registrar ajuste genérico para que o painel volte à meta.</li><li>Priorizar sempre o item de menor custo unitário.</li>
+          </ol>
+        </div>
+        
+    <h4>Discursivas - 5 questões</h4>
+    <ul><li>Explique como controle de saldos ajuda a reduzir custo operacional sem comprometer nível de serviço.</li><li>Descreva uma rotina de conferência que garanta rastreabilidade do dado.</li><li>Análise como a postura profissional influencia a acuracidade do estoque.</li><li>Relacione o indicador da aula com decisões de compras, armazenagem e atendimento.</li><li>Explique como o artefato da aula será usado no Projeto Integrador final.</li></ul>
+    <h4>Estudos de caso curtos - 2</h4>
+    <ul><li>Estudo curto 1: a BellaCare Cosméticos identificou diferença de 12 unidades em item crítico. Indique dados necessários, cálculo e decisão.</li><li>Estudo curto 2: em uma operação de cosméticos, o fornecedor atrasou dois dias e a cobertura caiu abaixo do mínimo. Proponha ação imediata e prevenção.</li></ul>
+    <h4>Desafio avançado</h4>
+    <p>Desafio avançado: monte um painel com cinco SKUs, calcule Saldo contábil, saldo físico, giro, cobertura e ruptura, classifique criticidade e proponha plano de redução de custo para 30 dias.</p>
+    
+    </section>
+    </article>
+      <nav class="lesson-pager content-band" aria-label="Navegação entre aulas">
+        <span></span>
+        <a class="btn btn-primary" href="aula-02.html">Proxima aula</a>
+      </nav>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

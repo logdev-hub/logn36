@@ -1,6 +1,6 @@
 # Portal Educacional UC 3 - Gestão de Estoques
 
-Material gerado a partir do arquivo HTML original: `Plano de Aula - UC 3 (LOG N36).html`.
+Material estruturado como portal estático para estudo da UC 3.
 
 ## Identificação
 
@@ -13,9 +13,14 @@ Material gerado a partir do arquivo HTML original: `Plano de Aula - UC 3 (LOG N3
 
 ## Estrutura
 
-- `index.html`: portal com análise do plano, sequência, PI, gamificação e casos integradores.
-- `livro-aluno.html`: versão sem respostas.
-- `livro-professor.html`: versão com gabaritos, critérios e mediação docente em accordions ocultos por padrão.
+- `index.html`: portal do aluno com sequência de aulas, Projeto Integrador, dashboards e casos complementares.
+- `livro-aluno.html`: índice navegável do Livro do Aluno.
+- `livro-aluno/aula-01.html` a `livro-aluno/aula-21.html`: uma página separada para cada aula do Livro do Aluno.
+- `livro-professor.html`: versão isolada do professor, sem conexão de navegação com o Livro do Aluno.
+- `casos/caso-01-cafelab.html`: caso complementar guiado.
+- `casos/caso-02-freshbox.html`: exercício FreshBox para o aluno.
+- `casos/caso-03-medlog.html`: novo caso MedLog Saúde para o aluno.
+- `professor/caso-02-gabarito.html` e `professor/caso-03-gabarito.html`: gabaritos calculados disponíveis apenas no fluxo do Livro do Professor.
 - `slides/aula01.html` a `slides/aula21.html`: apresentações HTML por aula.
 - `dashboards/dashboard09.html`, `dashboard10.html`, `dashboard17.html` e `dashboard21.html`: dashboards-chave com Bootstrap, Chart.js e simulação ERP/WMS.
 - `css/style.css`: padrão visual responsivo.

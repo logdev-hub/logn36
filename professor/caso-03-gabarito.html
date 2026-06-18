@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gabarito Docente - Caso 3 MedLog Saúde</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="../livro-professor.html">UC 3 Estoques</a>
+      <nav>
+        <a href="../livro-professor.html">Livro do Professor</a>
+        <a href="../livro-professor.html#gabaritos-casos">Gabaritos dos casos</a>
+        <span class="sidebar-label">Enunciados</span>
+        <a href="../casos/caso-02-freshbox.html">Caso 2 - FreshBox</a>
+        <a href="../casos/caso-03-medlog.html">Caso 3 - MedLog</a>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <div class="topbar">
+        <button class="btn btn-outline-light btn-sm nav-toggle" type="button" data-toggle-sidebar aria-label="Abrir menu">Menu</button>
+        <div>
+          <strong>Livro do Professor - Gabarito Caso 3</strong>
+          <small>MedLog Saúde - respostas calculadas</small>
+        </div>
+        <div class="header-actions">
+          <a class="btn btn-outline-light btn-sm" href="../livro-professor.html#gabaritos-casos">Livro do Professor</a>
+          <button class="btn btn-warning btn-sm" type="button" data-print>Imprimir</button>
+        </div>
+      </div>
+
+      <article class="case-content">
+        <header class="case-hero">
+          <span class="eyebrow">Material do professor</span>
+          <h1>Caso 3 - MedLog Saúde</h1>
+          <p>Compare seus cálculos com este gabarito e observe a parte mais importante: a decisão. Em logística, o número só ganha valor quando aponta prioridade, responsável e ação.</p>
+          <div class="case-actions">
+            <a class="btn btn-warning" href="../livro-professor.html#gabaritos-casos">Voltar ao Livro do Professor</a>
+            <a class="btn btn-outline-light" href="../casos/caso-03-medlog.html">Ver enunciado</a>
+            <button class="btn btn-outline-light" type="button" data-print>Imprimir</button>
+          </div>
+        </header>
+
+        <section>
+          <h2>Processo resolvido passo a passo</h2>
+          <div class="process-steps">
+            <div class="process-step">
+              <h3><span class="step-number">1</span>Valor mensal de consumo</h3>
+              <code class="formula-line">Valor mensal = consumo mensal × custo unitário</code>
+              <p>CUR-01: 1.400 × 18,50 = <strong>R$ 25.900,00</strong>.</p>
+              <p>SER-10: 5.200 × 1,20 = <strong>R$ 6.240,00</strong>.</p>
+              <p>EPI-95: 3.100 × 3,80 = <strong>R$ 11.780,00</strong>.</p>
+              <p>LUVA-P: 760 × 42,00 = <strong>R$ 31.920,00</strong>.</p>
+              <p>SORO-500: 2.300 × 4,60 = <strong>R$ 10.580,00</strong>.</p>
+              <p>Valor mensal total = <strong>R$ 86.420,00</strong>.</p>
+            </div>
+
+            <div class="process-step">
+              <h3><span class="step-number">2</span>Participação e curva ABC</h3>
+              <code class="formula-line">Participação = valor mensal do item / valor total × 100</code>
+              <p>Ordenando do maior para o menor valor: LUVA-P, CUR-01, EPI-95, SORO-500 e SER-10.</p>
+              <p>LUVA-P: 31.920 / 86.420 = <strong>36,94%</strong>, classe A.</p>
+              <p>CUR-01: 25.900 / 86.420 = <strong>29,97%</strong>, acumulado 66,91%, classe A.</p>
+              <p>EPI-95: 11.780 / 86.420 = <strong>13,63%</strong>, acumulado 80,54%, classe B.</p>
+              <p>SORO-500: 10.580 / 86.420 = <strong>12,24%</strong>, acumulado 92,78%, classe B.</p>
+              <p>SER-10: 6.240 / 86.420 = <strong>7,22%</strong>, acumulado 100,00%, classe C.</p>
+            </div>
+
+            <div class="process-step">
+              <h3><span class="step-number">3</span>Divergência de inventário</h3>
+              <code class="formula-line">Divergência = estoque físico - estoque do sistema</code>
+              <p>CUR-01: 604 - 620 = <strong>-16</strong>.</p>
+              <p>SER-10: 2.428 - 2.400 = <strong>+28</strong>.</p>
+              <p>EPI-95: 861 - 900 = <strong>-39</strong>.</p>
+              <p>LUVA-P: 337 - 340 = <strong>-3</strong>.</p>
+              <p>SORO-500: 1.109 - 1.120 = <strong>-11</strong>.</p>
+            </div>
+
+            <div class="process-step">
+              <h3><span class="step-number">4</span>Acuracidade por item</h3>
+              <code class="formula-line">Acuracidade = (1 - |divergência| / estoque do sistema) × 100</code>
+              <p>CUR-01: (1 - 16 / 620) × 100 = <strong>97,42%</strong>.</p>
+              <p>SER-10: (1 - 28 / 2.400) × 100 = <strong>98,83%</strong>.</p>
+              <p>EPI-95: (1 - 39 / 900) × 100 = <strong>95,67%</strong>.</p>
+              <p>LUVA-P: (1 - 3 / 340) × 100 = <strong>99,12%</strong>.</p>
+              <p>SORO-500: (1 - 11 / 1.120) × 100 = <strong>99,02%</strong>.</p>
+            </div>
+
+            <div class="process-step">
+              <h3><span class="step-number">5</span>Cobertura em dias</h3>
+              <code class="formula-line">Cobertura = estoque físico / demanda média diária</code>
+              <p>CUR-01: 604 / 47 = <strong>12,85 dias</strong>.</p>
+              <p>SER-10: 2.428 / 173 = <strong>14,03 dias</strong>.</p>
+              <p>EPI-95: 861 / 103 = <strong>8,36 dias</strong>.</p>
+              <p>LUVA-P: 337 / 25 = <strong>13,48 dias</strong>.</p>
+              <p>SORO-500: 1.109 / 77 = <strong>14,40 dias</strong>.</p>
+            </div>
+
+            <div class="process-step">
+              <h3><span class="step-number">6</span>Prioridade operacional</h3>
+              <p>O item <strong>EPI-95</strong> tem a pior acuracidade e a menor cobertura. Mesmo sendo classe B, exige ação imediata porque pode gerar ruptura em atendimento hospitalar.</p>
+              <p>O item <strong>CUR-01</strong> é classe A e está abaixo de 98% de acuracidade; por isso deve ser investigado logo após o EPI-95.</p>
+              <p><strong>LUVA-P</strong> é classe A, mas tem baixa divergência e cobertura adequada. Deve entrar em contagem cíclica semanal, sem ação emergencial.</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Resumo em tabela</h2>
+          <p>Valor mensal total: <strong>R$ 86.420,00</strong>. Acuracidade total aproximada: <strong>98,20%</strong>. Divergência financeira líquida: <strong>-R$ 587,20</strong>; divergência absoluta: <strong>R$ 654,40</strong>.</p>
+          <div class="table-responsive">
+            <table class="table table-bordered align-middle answer-table">
+              <thead><tr><th>SKU</th><th>Valor mensal</th><th>%</th><th>% acum.</th><th>ABC</th><th>Diverg.</th><th>Acuracidade</th><th>Cobertura</th></tr></thead>
+              <tbody>
+                <tr><td>LUVA-P</td><td>R$ 31.920,00</td><td>36,94%</td><td>36,94%</td><td>A</td><td>-3</td><td>99,12%</td><td>13,48 dias</td></tr>
+                <tr><td>CUR-01</td><td>R$ 25.900,00</td><td>29,97%</td><td>66,91%</td><td>A</td><td>-16</td><td>97,42%</td><td>12,85 dias</td></tr>
+                <tr><td>EPI-95</td><td>R$ 11.780,00</td><td>13,63%</td><td>80,54%</td><td>B</td><td>-39</td><td>95,67%</td><td>8,36 dias</td></tr>
+                <tr><td>SORO-500</td><td>R$ 10.580,00</td><td>12,24%</td><td>92,78%</td><td>B</td><td>-11</td><td>99,02%</td><td>14,40 dias</td></tr>
+                <tr><td>SER-10</td><td>R$ 6.240,00</td><td>7,22%</td><td>100,00%</td><td>C</td><td>+28</td><td>98,83%</td><td>14,03 dias</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section>
+          <h2>Decisão recomendada</h2>
+          <div class="callout">
+            <strong>Prioridade 1:</strong> recontar EPI-95 no mesmo turno, porque tem baixa acuracidade e cobertura inferior a 10 dias. <strong>Prioridade 2:</strong> investigar CUR-01, pois é item A e está abaixo de 98% de acuracidade. <strong>Rotina preventiva:</strong> LUVA-P e CUR-01 devem entrar em contagem cíclica semanal; EPI-95 precisa de revisão de baixa, separação e registro de saída.
+          </div>
+        </section>
+      </article>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aula 11 - Realiza&#231;&#227;o de Invent&#225;rio de Estoque</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="../index.html">UC 3 Estoques</a>
+      <nav>
+        <a href="../index.html">Portal do aluno</a>
+        <a href="../livro-aluno.html">Livro do Aluno</a>
+        <a href="../index.html#casos-complementares">Casos complementares</a>
+        <span class="sidebar-label">Aulas</span>
+        <a href="aula-01.html">Aula 01</a>
+        <a href="aula-02.html">Aula 02</a>
+        <a href="aula-03.html">Aula 03</a>
+        <a href="aula-04.html">Aula 04</a>
+        <a href="aula-05.html">Aula 05</a>
+        <a href="aula-06.html">Aula 06</a>
+        <a href="aula-07.html">Aula 07</a>
+        <a href="aula-08.html">Aula 08</a>
+        <a href="aula-09.html">Aula 09</a>
+        <a href="aula-10.html">Aula 10</a>
+        <a class="active" href="aula-11.html">Aula 11</a>
+        <a href="aula-12.html">Aula 12</a>
+        <a href="aula-13.html">Aula 13</a>
+        <a href="aula-14.html">Aula 14</a>
+        <a href="aula-15.html">Aula 15</a>
+        <a href="aula-16.html">Aula 16</a>
+        <a href="aula-17.html">Aula 17</a>
+        <a href="aula-18.html">Aula 18</a>
+        <a href="aula-19.html">Aula 19</a>
+        <a href="aula-20.html">Aula 20</a>
+        <a href="aula-21.html">Aula 21</a>
+        <span class="sidebar-label">Complementos</span>
+        <a href="../casos/caso-01-cafelab.html">Caso 1 - Cafelab</a>
+        <a href="../casos/caso-02-freshbox.html">Caso 2 - FreshBox</a>
+        <a href="../casos/caso-03-medlog.html">Caso 3 - MedLog</a>
+      </nav>
+    </aside>
+    <main class="main-content">
+    <div class="topbar">
+      <button class="btn btn-outline-light btn-sm nav-toggle" type="button" data-toggle-sidebar aria-label="Abrir menu">Menu</button>
+      <div>
+        <strong>Aula 11 - Realiza&#231;&#227;o de Invent&#225;rio de Estoque</strong>
+        <small>Livro do Aluno | Técnico em Logistica [2026 - EAD] | LOG N36</small>
+      </div>
+      <div class="header-actions">
+        <a class="btn btn-outline-light btn-sm" href="../livro-aluno.html">Indice</a>
+        <button class="btn btn-warning btn-sm" type="button" data-print>Imprimir</button>
+      </div>
+    </div>
+      <section class="lesson-mentor">
+        <div class="lesson-mentor-inner">
+          <span class="eyebrow">Conversa com o autor</span>
+          <h1>Aula 11: Realiza&#231;&#227;o de Invent&#225;rio de Estoque</h1>
+          <p>Nesta aula, você vai trabalhar Realiza&#231;&#227;o de Invent&#225;rio de Estoque como ferramenta de decisao. Na rotina profissional de logística, esse tema ajuda você a defender decisoes com dados, reduzir retrabalho, evitar ruptura e comunicar riscos antes que eles virem custo.</p>
+          <div class="case-actions">
+            <a class="btn btn-primary" href="../slides/aula11.html">Ver slides</a>
+            
+            <a class="btn btn-outline-primary" href="../livro-aluno.html">Voltar ao índice</a>
+          </div>
+        </div>
+      </section>
+      <section class="content-band">
+        <div class="callout">
+          <strong>Como estudar está aula:</strong> leia o contexto, refaca os calculos, registre a evidencia no portifolio e responda: que decisao eu conseguiria justificar para meu supervisor usando realiza&#231;&#227;o de invent&#225;rio de estoque?
+        </div>
+      </section>
+<article class="lesson-article" id="aula-11" data-lesson="11" data-topic="realização de inventário de estoque">
+      <header class="lesson-header">
+        <span class="eyebrow">Aula 11</span>
+        <h2>Realização de Inventário de Estoque</h2>
+        <p>Executar um inventário de estoque, identificando divergências e propondo soluções.</p>
+        <div class="badge-row"><span class="badge rounded-pill text-bg-light border">análise de dados, tomada de decisão e uso de indicadores</span><span class="badge rounded-pill text-bg-light border">inventário</span><span class="badge rounded-pill text-bg-light border">Aprendizagem colaborativa</span></div>
+      </header>
+      <section><h3>1. Identificação da Aula</h3><div class="table-responsive"><table class="table table-bordered align-middle"><thead><tr><th>Campo</th><th>Descrição</th></tr></thead><tbody><tr><td>Número da aula</td><td>Aula 11</td></tr><tr><td>Tema</td><td>Realização de Inventário de Estoque</td></tr><tr><td>Objetivos</td><td>Executar um inventário de estoque, identificando divergências e propondo soluções.</td></tr><tr><td>Competência</td><td>Executar os processos de gestão de estoques em situações reais de trabalho.</td></tr><tr><td>Indicadores</td><td>3 - 3. Realiza inventário, conforme políticas de gestão de estoques., conforme políticas de gestão de estoques.</td></tr><tr><td>Conhecimentos</td><td>Inventário com dados de sistema, qualidade cadastral, endereçamento e rastreabilidade.; Tendência de acuracidade entre ciclos.; Taxa de erro por endereço e por família de produto.</td></tr><tr><td>Habilidades</td><td>- Organizar materiais, documentos e local de trabalho.</td></tr><tr><td>Atitudes e valores</td><td>4 - - Responsabilidade e comprometimento com os acordos estabelecidos.</td></tr><tr><td>Recursos</td><td>1 - Sala de aula convencional, 8 - Ambiente externo ou visita tecnica</td></tr><tr><td>Estratégias</td><td>Aprendizagem colaborativa</td></tr><tr><td>Relação com Projeto Integrador</td><td>Os alunos aplicarão o conhecimento em situações reais no Projeto Integrador.</td></tr></tbody></table></div></section>
+      <section><h3>2. Situação-Problema de Abertura</h3>
+    <h4>Contexto</h4>
+    <p>A empresa fictícia <strong>GlobalPort Trading</strong>, atuante em <strong>Comércio Exterior</strong>, opera com alto volume de movimentações e precisa manter dados confiáveis para compras, armazenagem, separação e atendimento ao cliente. A aula coloca a turma no papel de equipe técnica responsável por transformar registros, documentos e indicadores em decisão operacional.</p>
+    <h4>Problema</h4>
+    <p>Na rotina do dia, a coordenação precisa realizar inventário sem interromper a operação de separação e expedição. A situação exige análise objetiva, comunicação com áreas envolvidas e produção de evidência técnica, pois a decisão não pode depender apenas de opinião ou memória da equipe.</p>
+    <h4>Dados</h4>
+    <div class="table-responsive"><table class="table table-sm table-striped align-middle"><thead><tr><th>Dado operacional</th><th>Valor</th></tr></thead><tbody><tr><td>Saldo inicial</td><td>164</td></tr><tr><td>Entradas registradas</td><td>67</td></tr><tr><td>Saídas registradas</td><td>91</td></tr><tr><td>Ajustes pendentes</td><td>0</td></tr><tr><td>Demanda média diária</td><td>29</td></tr><tr><td>Lead time fornecedor</td><td>7 dias</td></tr><tr><td>Estoque de segurança</td><td>39</td></tr></tbody></table></div>
+    <div class="table-responsive"><table class="table table-sm table-striped align-middle"><thead><tr><th>SKU</th><th>Produto</th><th>Estoque sistema</th><th>Contagem física</th><th>Custo unitário</th></tr></thead><tbody><tr><td>SKU-1002</td><td>Filtro automotivo linha leve</td><td>81</td><td>81</td><td>R$ 39,50</td></tr><tr><td>SKU-1003</td><td>Creme hidratante 250 ml</td><td>103</td><td>105</td><td>R$ 46,25</td></tr><tr><td>SKU-1004</td><td>Luva nitrílica descartável</td><td>164</td><td>163</td><td>R$ 53,00</td></tr><tr><td>SKU-1005</td><td>Kit rolamento industrial</td><td>183</td><td>187</td><td>R$ 12,50</td></tr></tbody></table></div>
+    <h4>Impactos</h4>
+    <p>Quando esse problema não é tratado, a empresa pode vender sem estoque, comprar acima da necessidade, atrasar pedidos, ocupar endereços com itens de baixo giro, perder acuracidade e comprometer a confiança nos relatórios. Em operações profissionais, uma diferença pequena em quantidade pode representar alto impacto se o item for crítico, caro ou essencial para atendimento de pedidos prioritários.</p>
+    <h4>Perguntas provocadoras</h4>
+    <ul><li>Qual dado precisa ser validado antes de tomar decisão sobre inventário?</li><li>Que documento comprova a movimentação e reduz risco de ajuste indevido?</li><li>Qual indicador mostra o impacto operacional e financeiro do problema?</li><li>Que decisão o técnico em logística pode recomendar com base nos dados?</li><li>Como o entregável desta aula fortalece o Projeto Integrador?</li></ul>
+    </section>
+      <section><h3>3. Fundamentação Teórica Completa</h3><p>Inventário é a verificação sistemática entre estoque físico e estoque registrado. Ele pode ser geral, rotativo, cíclico, por amostragem, por endereço ou por família de produtos. O objetivo não é apenas contar; é gerar confiança no estoque e identificar onde o processo falha. Uma contagem sem método pode produzir números, mas não produz gestão.</p><p>A preparação do inventário define o resultado. É necessário delimitar área, bloquear movimentações quando cabível, separar itens avariados, revisar unidades de medida, treinar contadores, organizar fichas ou coletores e definir regra de segunda contagem. Quanto mais crítico o item, maior deve ser o rigor de conferência.</p><p>Os benefícios do inventário incluem aumento da acuracidade, identificação de perdas, melhoria de endereçamento e base confiável para compras e produção. A limitação é que inventário isolado corrige o sintoma, mas não elimina a causa. Se o recebimento lança errado ou a separação não confirma saída, a divergência retorna.</p><p>Em operações profissionais, inventários cíclicos em itens A costumam ser mais úteis que uma grande contagem anual feita às pressas. O controle frequente permite detectar desvios enquanto a evidência ainda existe, como nota fiscal, romaneio, etiqueta, lote e registro de operador.</p>
+    <h4>Conceitos centrais da aula</h4>
+    <p>Esta aula trabalha <strong>inventário</strong> dentro da fase de <strong>análise de dados, tomada de decisão e uso de indicadores</strong>. O conceito precisa ser demonstrado em evidências observáveis: documento correto, registro consistente, cálculo justificado, decisão comunicada e melhoria incorporada ao Projeto Integrador.</p>
+    
+    <h4>Progressão técnica desta aula</h4>
+    <p>A sequência da UC retoma processos parecidos em momentos diferentes. Nesta aula, a retomada não deve repetir a mesma abordagem: ela precisa elevar a complexidade técnica, conectando fundamento, cálculo e decisão.</p>
+    <div class="table-responsive"><table class="table table-bordered align-middle"><thead><tr><th>Dimensão</th><th>Foco da aula</th></tr></thead><tbody><tr><td>Fundamento-chave</td><td>Inventário com dados de sistema, qualidade cadastral, endereçamento e rastreabilidade.</td></tr><tr><td>Cálculo principal</td><td>Tendência de acuracidade entre ciclos.</td></tr><tr><td>Cálculo complementar</td><td>Taxa de erro por endereço e por família de produto.</td></tr><tr><td>Decisão gerencial esperada</td><td>Revisar cadastro, endereçamento ou rotina de contagem conforme o padrão de erro encontrado.</td></tr></tbody></table></div>
+    
+    <h4>Aplicações práticas</h4>
+    <p>A aplicação profissional aparece quando a turma usa dados de produto, saldo, demanda, lead time, inventário e custo para tomar decisão. O foco não é memorizar uma fórmula, mas interpretar o resultado e justificar uma ação possível dentro de uma empresa real.</p>
+    <h4>Benefícios, limitações e cuidados</h4>
+    <p>O principal benefício é a redução de custo operacional por meio de estoque confiável, menor urgência, menos retrabalho e melhor atendimento. A principal limitação é a qualidade do dado: se a entrada, a saída, a contagem ou o cadastro estiverem errados, o indicador também ficará errado. Por isso, a competência combina técnica, processo, postura profissional e comunicação.</p>
+    </section>
+      <section><h3>4. Exemplos Profissionais</h3>
+            <article class="example-block">
+              <h4>Comércio Exterior - GlobalPort Trading</h4>
+              <p>No cenário de comércio exterior, o item <strong>Filtro automotivo linha leve</strong> exige controle rigorosó porque sua falta afeta atendimento, separação e custo. A equipe usa o tema da aula para comparar documentos, analisar registros e decidir se deve ajustar saldo, solicitar reposição, recontar, investigar divergência ou parametrizar alerta no sistema.</p>
+              <p>A decisão profissional esperada é registrar a evidência, calcular o impacto e comunicar a área responsável com linguagem objetiva. O exemplo evita repetição de cenários e mostra que a mesma competência pode aparecer em realidades diferentes: operação de alto giro, item crítico, lote controlado, validade, importação ou abastecimento interno.</p>
+            </article>
+            
+            <article class="example-block">
+              <h4>Centro de Distribuição - LogiVale Distribuição</h4>
+              <p>No cenário de centro de distribuição, o item <strong>Luva nitrílica descartável</strong> exige controle rigorosó porque sua falta afeta atendimento, separação e custo. A equipe usa o tema da aula para comparar documentos, analisar registros e decidir se deve ajustar saldo, solicitar reposição, recontar, investigar divergência ou parametrizar alerta no sistema.</p>
+              <p>A decisão profissional esperada é registrar a evidência, calcular o impacto e comunicar a área responsável com linguagem objetiva. O exemplo evita repetição de cenários e mostra que a mesma competência pode aparecer em realidades diferentes: operação de alto giro, item crítico, lote controlado, validade, importação ou abastecimento interno.</p>
+            </article>
+            
+            <article class="example-block">
+              <h4>Operador Logístico - Rota Sul Operações</h4>
+              <p>No cenário de operador logístico, o item <strong>Arroz tipo 1 pacote 5 kg</strong> exige controle rigorosó porque sua falta afeta atendimento, separação e custo. A equipe usa o tema da aula para comparar documentos, analisar registros e decidir se deve ajustar saldo, solicitar reposição, recontar, investigar divergência ou parametrizar alerta no sistema.</p>
+              <p>A decisão profissional esperada é registrar a evidência, calcular o impacto e comunicar a área responsável com linguagem objetiva. O exemplo evita repetição de cenários e mostra que a mesma competência pode aparecer em realidades diferentes: operação de alto giro, item crítico, lote controlado, validade, importação ou abastecimento interno.</p>
+            </article>
+            </section>
+      <section><h3>5. Cálculos Passo a Passo</h3>
+    <h4>Fórmula</h4>
+    <p><code>Acuracidade = itens sem divergência / itens contados x 100</code></p>
+    <p><code>Valor da divergência = diferença física x custo unitário</code></p>
+    
+    <div class="info-box">
+      <p><strong>Cálculo principal da aula:</strong> Tendência de acuracidade entre ciclos.</p>
+      <p><strong>Cálculo complementar:</strong> Taxa de erro por endereço e por família de produto.</p>
+      <p><strong>Decisão que o cálculo deve sustentar:</strong> Revisar cadastro, endereçamento ou rotina de contagem conforme o padrão de erro encontrado.</p>
+    </div>
+    
+    <h4>Variáveis</h4>
+    <div class="table-responsive"><table class="table table-sm table-striped align-middle"><thead><tr><th>Variável</th><th>Valor</th></tr></thead><tbody><tr><td>Itens contados</td><td>102</td></tr><tr><td>Itens sem divergência</td><td>92</td></tr><tr><td>Diferença física</td><td>-1</td></tr><tr><td>Custo unitário</td><td>R$ 31,05</td></tr></tbody></table></div>
+    <h4>Explicação</h4>
+    <p>A fórmula organiza a decisão para que a equipe não dependa de impressão subjetiva. Cada variável precisa vir de documento, sistema ou contagem validada; caso contrário, o cálculo pode parecer correto, mas apoiar uma decisão errada.</p>
+    <h4>Aplicação prática</h4>
+    <p>O cálculo será usado para decidir se a operação deve aprovar ajustes documentados, revisar endereçamento e programar contagens cíclicas em itens críticos. O resultado deve ser registrado no artefato da aula e defendido oralmente pela equipe.</p>
+    <h4>Resolução passo a passo</h4>
+    <ul><li>Identificar total de itens contados: 102.</li><li>Identificar itens sem divergência: 92.</li><li>Dividir itens sem divergência pelo total: 92 / 102 = 0.9020.</li><li>Multiplicar por 100 para obter acuracidade: 90,20%.</li></ul>
+    <h4>Interpretação do resultado</h4>
+    <p>Resultado calculado: <strong>90,20%</strong>. O número precisa ser comparado com política interna, criticidade do item e impacto no cliente. Um resultado aceitável em item barato e substituível pode ser inaceitável em item hospitalar, importado ou essencial à produção.</p>
+    <h4>Decisão gerencial</h4>
+    <p>Abaixo de 98%, a equipe deve priorizar segunda contagem nos itens A e registrar plano de melhoria por endereço ou família.</p>
+    <h4>Exemplos completos com cálculos e detalhamento</h4>
+    <p>Os três exemplos abaixo aprofundam a aplicação da aula em situações corporativas. Cada exemplo apresenta contexto, fórmula, variáveis, resolução passo a passo, interpretação, decisão gerencial e estrutura de planilha para prática em Excel ou Google Sheets.</p>
+    
+    <article class="calc-example">
+      <h4>Exemplo completo 1 - Acuracidade do inventário</h4>
+      <p><strong>Contexto profissional:</strong> No inventário da GlobalPort Trading, a equipe precisa medir se o resultado atende ao padrão mínimo de confiabilidade.</p>
+      <p><strong>Fórmula:</strong> <code>Acuracidade = itens sem divergência / itens contados x 100</code></p>
+      <p><strong>Variáveis:</strong></p>
+      <div class="table-responsive"><table class="table table-sm table-striped align-middle"><thead><tr><th>Variável</th><th>Valor</th><th>Origem do dado</th></tr></thead><tbody><tr><td>Itens contados</td><td>102</td><td>Ficha ou coletor de inventário</td></tr><tr><td>Itens sem divergência</td><td>92</td><td>Comparação físico x sistema</td></tr></tbody></table></div>
+      <p><strong>Resolução passo a passo:</strong></p>
+      <ul><li>Identificar total de itens contados: 102.</li><li>Identificar itens sem divergência: 92.</li><li>Dividir itens sem divergência pelo total: 92 / 102 = 0.9020.</li><li>Multiplicar por 100: 0.9020 x 100 = 90.20%.</li></ul>
+      <p><strong>Interpretação do resultado:</strong> A acuracidade é 90.20%. Se a meta interna for 98%, o resultado indica necessidade de análise dos itens divergentes.</p>
+      <p><strong>Decisão gerencial:</strong> Programar segunda contagem nos itens divergentes, priorizar itens A e registrar plano de correção no relatório do PI.</p>
+      <p><strong>Estrutura no Excel ou Google Sheets:</strong></p>
+      <div class="table-responsive"><table class="table table-sm table-striped align-middle"><thead><tr><th>Célula</th><th>Campo</th><th>Fórmula ou dado</th></tr></thead><tbody><tr><td>A2</td><td>Itens contados</td><td>102</td></tr><tr><td>B2</td><td>Itens sem divergência</td><td>92</td></tr><tr><td>C2</td><td>Acuracidade</td><td>=B2/A2</td></tr><tr><td>D2</td><td>Status</td><td>=SE(C2&gt;=98%;&quot;Meta atingida&quot;;&quot;Ação corretiva&quot;)</td></tr></tbody></table></div>
+    </article>
+    
+    <article class="calc-example">
+      <h4>Exemplo completo 2 - Valor financeiro da divergência</h4>
+      <p><strong>Contexto profissional:</strong> O inventário encontrou diferença no item Filtro automotivo linha leve e a gestão quer saber o impacto financeiro antes de aprovar ajuste.</p>
+      <p><strong>Fórmula:</strong> <code>Valor da divergência = diferença absoluta x custo unitário</code></p>
+      <p><strong>Variáveis:</strong></p>
+      <div class="table-responsive"><table class="table table-sm table-striped align-middle"><thead><tr><th>Variável</th><th>Valor</th><th>Origem do dado</th></tr></thead><tbody><tr><td>Estoque sistêmico</td><td>81</td><td>ERP/WMS</td></tr><tr><td>Estoque físico</td><td>81</td><td>Contagem física</td></tr><tr><td>Diferença</td><td>0</td><td>Físico - sistema</td></tr><tr><td>Custo unitário</td><td>R$ 39,50</td><td>Custo médio cadastrado</td></tr></tbody></table></div>
+      <p><strong>Resolução passo a passo:</strong></p>
+      <ul><li>Calcular diferença: 81 - 81 = 0 unidades.</li><li>Usar valor absoluto da diferença: |0| = 0 unidades.</li><li>Multiplicar pelo custo unitário: 0 x R$ 39,50 = R$ 0,00.</li><li>Classificar o impacto por valor, criticidade e reincidência.</li></ul>
+      <p><strong>Interpretação do resultado:</strong> O impacto financeiro estimado é R$ 0,00. Mesmo divergência pequena pode ser crítica se o item for essencial ou controlado.</p>
+      <p><strong>Decisão gerencial:</strong> Aprovar ajuste somente após segunda contagem e evidência de causa provável; divergência de alto valor deve ir para análise de causa raiz.</p>
+      <p><strong>Estrutura no Excel ou Google Sheets:</strong></p>
+      <div class="table-responsive"><table class="table table-sm table-striped align-middle"><thead><tr><th>Célula</th><th>Campo</th><th>Fórmula ou dado</th></tr></thead><tbody><tr><td>A2</td><td>Sistema</td><td>81</td></tr><tr><td>B2</td><td>Físico</td><td>81</td></tr><tr><td>C2</td><td>Diferença</td><td>=B2-A2</td></tr><tr><td>D2</td><td>Custo unitário</td><td>39.5</td></tr><tr><td>E2</td><td>Valor divergente</td><td>=ABS(C2)*D2</td></tr></tbody></table></div>
+    </article>
+    
+    <article class="calc-example">
+      <h4>Exemplo completo 3 - Planejamento do tempo de contagem</h4>
+      <p><strong>Contexto profissional:</strong> A supervisão precisa saber se o inventário pode ser concluído no período de aula/simulação sem comprometer a qualidade da contagem.</p>
+      <p><strong>Fórmula:</strong> <code>Tempo estimado = endereços a contar / (produtividade por equipe x número de equipes)</code></p>
+      <p><strong>Variáveis:</strong></p>
+      <div class="table-responsive"><table class="table table-sm table-striped align-middle"><thead><tr><th>Variável</th><th>Valor</th><th>Origem do dado</th></tr></thead><tbody><tr><td>Endereços a contar</td><td>53</td><td>Roteiro de inventário</td></tr><tr><td>Produtividade por equipe</td><td>10 endereços/hora</td><td>Histórico ou teste piloto</td></tr><tr><td>Número de equipes</td><td>3</td><td>Planejamento de pessoas</td></tr><tr><td>Amostra crítica</td><td>11</td><td>20% dos endereços para dupla checagem</td></tr></tbody></table></div>
+      <p><strong>Resolução passo a passo:</strong></p>
+      <ul><li>Multiplicar produtividade por equipes: 10 x 3 = 30 endereços/hora.</li><li>Dividir endereços pela capacidade: 53 / 30 = 1.77 horas.</li><li>Definir amostra crítica para segunda contagem: 53 x 20% = 11 endereços.</li><li>Adicionar tempo de conferência e consolidação antes de liberar ajustes.</li></ul>
+      <p><strong>Interpretação do resultado:</strong> O tempo base é 1.77 horas, sem considerar retrabalho. A segunda contagem deve focar os 11 endereços mais críticos.</p>
+      <p><strong>Decisão gerencial:</strong> Se o tempo exceder a janela disponível, reduzir escopo por curva ABC ou aumentar equipes para manter qualidade.</p>
+      <p><strong>Estrutura no Excel ou Google Sheets:</strong></p>
+      <div class="table-responsive"><table class="table table-sm table-striped align-middle"><thead><tr><th>Célula</th><th>Campo</th><th>Fórmula ou dado</th></tr></thead><tbody><tr><td>A2</td><td>Endereços</td><td>53</td></tr><tr><td>B2</td><td>Produtividade por equipe</td><td>10</td></tr><tr><td>C2</td><td>Equipes</td><td>3</td></tr><tr><td>D2</td><td>Tempo estimado</td><td>=A2/(B2*C2)</td></tr><tr><td>E2</td><td>Amostra crítica</td><td>=ARRED(A2*20%;0)</td></tr></tbody></table></div>
+    </article>
+    
+    <h4>Atividade prática em Excel ou Google Sheets</h4>
+    <p>A equipe deve montar uma planilha simples, com cabeçalhos claros, validação de unidade de medida e célula de decisão. O objetivo é transformar o cálculo em ferramenta reutilizável para o Projeto Integrador.</p>
+    <div class="table-responsive"><table class="table table-sm table-striped align-middle"><thead><tr><th>Célula</th><th>Campo</th><th>Fórmula ou dado</th></tr></thead><tbody><tr><td>A2</td><td>Itens contados</td><td>102</td></tr><tr><td>B2</td><td>Sem divergência</td><td>92</td></tr><tr><td>C2</td><td>Acuracidade</td><td>=B2/A2</td></tr><tr><td>D2</td><td>Diferença física</td><td>-1</td></tr><tr><td>E2</td><td>Custo unitário</td><td>31.049999999999997</td></tr><tr><td>F2</td><td>Valor divergente</td><td>=ABS(D2)*E2</td></tr></tbody></table></div>
+    </section>
+      
+      <section><h3>6. Tabelas e Dados Realistas</h3>
+    <p>A tabela abaixo usa dados realistas para prática profissional. Os números são fictícios para fins didáticos, mas seguem volumes e variações compatíveis com operações de estoque de pequeno e médio porte.</p>
+    <div class="table-responsive"><table class="table table-sm table-striped align-middle"><thead><tr><th>SKU</th><th>Produto</th><th>Un.</th><th>Inicial</th><th>Entradas</th><th>Saídas</th><th>Ajustes</th><th>Sistema</th><th>Físico</th><th>Custo unit.</th></tr></thead><tbody><tr><td>SKU-1002</td><td>Filtro automotivo linha leve</td><td>un</td><td>113</td><td>32</td><td>62</td><td>-2</td><td>81</td><td>81</td><td>R$ 39,50</td></tr><tr><td>SKU-1003</td><td>Creme hidratante 250 ml</td><td>cx</td><td>131</td><td>39</td><td>70</td><td>3</td><td>103</td><td>105</td><td>R$ 46,25</td></tr><tr><td>SKU-1004</td><td>Luva nitrílica descartável</td><td>cx</td><td>149</td><td>46</td><td>30</td><td>-1</td><td>164</td><td>163</td><td>R$ 53,00</td></tr><tr><td>SKU-1005</td><td>Kit rolamento industrial</td><td>un</td><td>167</td><td>53</td><td>38</td><td>1</td><td>183</td><td>187</td><td>R$ 12,50</td></tr><tr><td>SKU-1006</td><td>Arroz tipo 1 pacote 5 kg</td><td>fd</td><td>185</td><td>25</td><td>46</td><td>0</td><td>164</td><td>161</td><td>R$ 19,25</td></tr></tbody></table></div>
+    <p>Ao trabalhar com a tabela, a turma deve identificar inconsistências, calcular indicadores, justificar decisões e registrar evidências. O uso de dados tabulares aproxima a aula da rotina de ERP, WMS e planilhas corporativas.</p>
+    </section>
+      <section><h3>7. Documentos e Checklists do Processo</h3>
+    <h4>Documento principal da aula</h4>
+    <p><strong>Registro de inventário por endereço e rastreabilidade</strong>. Este documento formaliza o processo trabalhado na aula e serve como evidência operacional para o Projeto Integrador.</p>
+    <h4>Campos mínimos do documento</h4>
+    <ul><li>Aula, data, turma, equipe e responsável pelo registro.</li><li>SKU, descrição, unidade de medida, endereço e família do item.</li><li>Origem dos dados: documento, ERP/WMS, contagem física ou planilha.</li><li>Cálculo principal: Tendência de acuracidade entre ciclos..</li><li>Cálculo complementar: Taxa de erro por endereço e por família de produto..</li><li>Decisão gerencial esperada: Revisar cadastro, endereçamento ou rotina de contagem conforme o padrão de erro encontrado..</li><li>Evidência anexada e assinatura ou validação do responsável.</li><li>Área ou endereço contado, horário de bloqueio, contador, conferente, primeira contagem e segunda contagem.</li><li>Regra de tolerância, divergência encontrada, valor financeiro e autorização de ajuste.</li></ul>
+    <h4>Checklist do processo</h4>
+    <div class="table-responsive"><table class="table table-bordered align-middle"><thead><tr><th>Momento</th><th>Itens de verificação</th></tr></thead><tbody><tr><td>Antes do processo</td><td>Confirmar objetivo da aula e documento que será produzido.<br>Verificar se os dados possuem origem rastreável.<br>Checar unidade de medida, SKU, endereço e período analisado.<br>Definir área, equipe, bloqueio de movimentação e regra de segunda contagem.</td></tr><tr><td>Durante o processo</td><td>Substituir valores na fórmula antes de interpretar o resultado.<br>Conferir se o cálculo usa saldo disponível, não apenas saldo físico.<br>Registrar evidência, responsável e prazo da decisão.<br>Registrar contagem por endereço, horário, contador e conferente.</td></tr><tr><td>Depois do processo</td><td>Comparar resultado com política interna, criticidade e impacto no cliente.<br>Anexar planilha, documento e conclusão ao portfólio do Projeto Integrador.<br>Listar uma fragilidade do processo e uma melhoria para a próxima aula.<br>Liberar ajuste somente com divergência documentada e evidência mínima.</td></tr></tbody></table></div>
+    <h4>Controle de versão e evidências</h4>
+    <p>Ao final da aula, a equipe deve salvar a versão do documento, anexar a planilha de cálculo, registrar quem validou os dados e indicar qual decisão foi tomada. Quando houver divergência ou reposição, o documento deve trazer responsável e prazo de acompanhamento.</p>
+    
+    </section>
+      <section><h3>8. Estudo de Caso Profissional</h3>
+    <h4>Empresa</h4>
+    <p><strong>CliqueEntrega Market</strong>, empresa fictícia do segmento de e-commerce, com operação em dois turnos e equipe de armazenagem responsável por recebimento, separação, inventário e relatórios.</p>
+    <h4>Contexto</h4>
+    <p>A coordenação solicitou um diagnóstico sobre inventário. O estoque possui itens de giro rápido, itens críticos e materiais com custo unitário elevado. A gestão quer reduzir custos sem criar ruptura ou excesso.</p>
+    <h4>Problema</h4>
+    <p>Nos últimos dias, relatórios apontaram divergências entre registros e operação. O time precisa transformar dados em decisão, usando o indicador principal da aula: <strong>Acuracidade, itens contados, divergência física, valor divergente e tempo de contagem</strong>.</p>
+    <h4>Dados</h4>
+    <div class="table-responsive"><table class="table table-sm table-striped align-middle"><thead><tr><th>Indicador</th><th>Valor</th></tr></thead><tbody><tr><td>Demanda média diária</td><td>29</td></tr><tr><td>Lead time</td><td>7 dias</td></tr><tr><td>Saldo final calculado</td><td>140</td></tr><tr><td>Ponto de pedido</td><td>242</td></tr><tr><td>Acuracidade estimada</td><td>90,20%</td></tr><tr><td>Custo unitário de referência</td><td>R$ 31,05</td></tr></tbody></table></div>
+    <h4>Desafio</h4>
+    <p>Construir uma recomendação técnica que explique o problema, calcule o impacto, apresente ação imediata e proponha prevenção para o próximo ciclo operacional.</p>
+    <h4>Perguntas</h4>
+    <ul><li>Qual é o dado mais crítico para validar antes da decisão?</li><li>Que cálculo comprova a necessidade de ação?</li><li>Que documento ou evidência deve acompanhar a recomendação?</li><li>Qual risco existe se a empresa adiar a decisão?</li><li>Como o artefato da aula será incorporado ao Projeto Integrador?</li></ul>
+    <h4>Entregável esperado</h4>
+    <p>Relatório de uma página com diagnóstico, cálculo, decisão, responsável, prazo e evidência anexada. O relatório deve ser anexado ao portfólio do Projeto Integrador.</p>
+    </section>
+      
+      <section><h3>10. Exercícios</h3>
+    <h4>Exercícios objetivos</h4>
+    
+        <div class="question">
+          <p><strong>1.</strong> Na Farmalog Saúde, qual evidência dá maior suporte ao processo de inventário?</p>
+          <ol type="A">
+            <li>Relatório sem data e sem responsável.</li><li>Registro validado com documento, quantidade, item, endereço e responsável.</li><li>Comentário verbal feito no fim do turno.</li><li>Mensagem informal sem vínculo com o sistema.</li><li>Estimativa visual sem contagem ou histórico.</li>
+          </ol>
+        </div>
+        
+        <div class="question">
+          <p><strong>2.</strong> Qual indicador deve ser acompanhado quando a aula trata de Acuracidade, itens contados, divergência física, valor divergente e tempo de contagem?</p>
+          <ol type="A">
+            <li>Opinião da equipe sobre o item mais importante.</li><li>Quantidade total comprada no último mês sem comparação com consumo.</li><li>Indicador calculado com fórmula declarada, origem dos dados e meta de comparação.</li><li>Cor da etiqueta do produto no endereço.</li><li>Número de reuniões realizadas sobre o tema.</li>
+          </ol>
+        </div>
+        
+        <div class="question">
+          <p><strong>3.</strong> Quando uma movimentação física ocorre antes do registro sistêmico, qual risco aumenta?</p>
+          <ol type="A">
+            <li>O estoque de segurança aumenta automaticamente.</li><li>O lead time do fornecedor deixa de existir.</li><li>A demanda média diária se torna sempre igual a zero.</li><li>O sistema passa a orientar decisões com saldo diferente da realidade operacional.</li><li>A contagem física perde necessidade de conferência.</li>
+          </ol>
+        </div>
+        
+        <div class="question">
+          <p><strong>4.</strong> Qual atitude profissional reduz divergências durante a rotina de estoque?</p>
+          <ol type="A">
+            <li>Ajustar saldos no fim do mês sem investigar causa.</li><li>Usar sempre a estimativa visual do operador.</li><li>Evitar comunicação com compras e expedição.</li><li>Priorizar apenas itens baratos para simplificar o controle.</li><li>Registrar movimentações no momento correto e anexar evidência rastreável.</li>
+          </ol>
+        </div>
+        
+        <div class="question">
+          <p><strong>5.</strong> Qual entrega deve compor o portfólio do Projeto Integrador ao final da aula?</p>
+          <ol type="A">
+            <li>Artefato com dados utilizados, fórmula aplicada, decisão tomada e risco mitigado.</li><li>Imagem decorativa do estoque sem análise.</li><li>Lista de presença da atividade em grupo.</li><li>Texto genérico sem cálculo nem evidência.</li><li>Print do sistema sem identificação do problema.</li>
+          </ol>
+        </div>
+        
+    <h4>Exercícios discursivos</h4>
+    <ul><li>Explique como inventário contribui para otimizar e reduzir custos das operações.</li><li>Descreva o papel do técnico em logística quando o indicador principal da aula apresenta resultado fora da meta.</li><li>Relacione a situação-problema da aula com uma evidência observável de aprendizagem.</li></ul>
+    <h4>Exercícios com cálculos</h4>
+    <ul><li>Usando a fórmula Acuracidade = itens sem divergência / itens contados x 100, monte o cálculo com os dados da situação-problema e justifique a decisão.</li><li>Aplique também Valor da divergência = diferença física x custo unitário e interprete o resultado para a gestão.</li><li>Monte uma planilha com pelo menos cinco produtos, calcule o indicador da aula e destaque em amarelo os itens que exigem ação.</li></ul>
+    </section>
+      
+      <section><h3>12. Atividades em Grupo</h3>
+    <article class="activity">
+      <h4>Atividade 1 - Sala de Situação Inventário</h4>
+      <p><strong>Objetivo:</strong> analisar uma ocorrência de inventário e defender uma decisão técnica com evidências.</p>
+      <p><strong>Tempo:</strong> 50 minutos. <strong>Recursos:</strong> dados da aula, planilha, quadro branco e painel do portal.</p>
+      <p><strong>Formação dos grupos:</strong> equipes de 4 a 5 estudantes, com papéis de analista, conferente, comprador, líder operacional e relator.</p>
+      <p><strong>Passo a passo:</strong> ler a ocorrência, validar dados, aplicar cálculo, definir decisão, preparar justificativa e apresentar em até 4 minutos.</p>
+      <p><strong>Entregável:</strong> registro técnico com cálculo, decisão e responsável. <strong>Critérios:</strong> evidência, coerência, comunicação e uso correto dos indicadores.</p>
+    </article>
+    <article class="activity">
+      <h4>Atividade 2 - Comitê Operacional PeçaCerta Autopeças</h4>
+      <p><strong>Objetivo:</strong> simular uma reunião de operação em autopeças, negociando prioridades entre estoque, compras, armazenagem e atendimento.</p>
+      <p><strong>Tempo:</strong> 60 minutos. <strong>Recursos:</strong> cartões de decisão, dados de produtos, modelo de relatório e computador ou celular.</p>
+      <p><strong>Formação dos grupos:</strong> metade da turma atua como operação e metade como gestão; depois os papéis são trocados.</p>
+      <p><strong>Passo a passo:</strong> cada grupo recebe restrição de custo, prazo e nível de serviço; propõe uma decisão; confronta a proposta com dados; ajusta o plano e registra o aprendizado.</p>
+      <p><strong>Entregável:</strong> ata objetiva da decisão com riscos e próximos passos. <strong>Critérios:</strong> negociação, uso de dados, postura profissional e aderência ao PI.</p>
+    </article>
+    </section>
+      
+      <section><h3>14. Mini Projeto da Aula</h3>
+    <p>O mini projeto da aula é o artefato <strong>Plano e relatório de inventário com contagem, acuracidade e divergências valorizadas</strong>. Ele deve conter cabeçalho, objetivo, dados utilizados, fórmula aplicada, decisão tomada, risco mitigado e evidência anexada. O artefato não deve ser tratado como tarefa isolada: ele compõe o portfólio evolutivo do Projeto Integrador e será usado na defesa final da UC.</p>
+    <p>Critérios mínimos: informação rastreável, linguagem profissional, cálculo conferível, conclusão objetiva e vínculo com redução de custos operacionais.</p>
+    </section>
+      <section><h3>15. Atividades Complementares</h3>
+    <ul>
+      <li><strong>Pesquisa:</strong> localizar um procedimento real ou modelo empresarial relacionado a inventário e comparar com o processo da aula.</li>
+      <li><strong>Exercício extra:</strong> criar uma nova linha de produto na planilha e recalcular o indicador principal com justificativa.</li>
+      <li><strong>Debate:</strong> discutir quando o menor estoque reduz custo e quando ele aumenta risco operacional.</li>
+      <li><strong>Análise crítica:</strong> apontar três fragilidades do processo simulado e propor controles simples.</li>
+      <li><strong>Atividade para casa:</strong> registrar no portfólio uma evidência de aprendizagem e uma dúvida técnica para a próxima aula.</li>
+    </ul>
+    </section>
+      <section><h3>16. Box Saiba Mais</h3>
+    <div class="info-box saiba">
+      <p><strong>Curiosidade:</strong> em operações maduras, pequenos alertas de estoque evitam grandes paradas porque a decisão acontece antes da ruptura.</p>
+      <p><strong>Mercado:</strong> empresas valorizam profissionais que unem domínio operacional, planilha, ERP/WMS e comunicação com compras, vendas e produção.</p>
+      <p><strong>Tecnologia:</strong> leitores de código de barras, RFID, WMS e painéis de BI ampliam visibilidade, mas continuam dependentes de processo disciplinado.</p>
+      <p><strong>Dica profissional:</strong> ao apresentar inventário, sempre leve número, evidência e recomendação. Essa combinação aumenta credibilidade técnica.</p>
+    </div>
+    </section>
+      <section><h3>17. Box Erros Comuns</h3>
+    <div class="info-box erros">
+      <p><strong>Erro:</strong> Contar com movimentação liberada no mesmo endereço durante o inventário.</p>
+      <p><strong>Consequência:</strong> O resultado mistura saldo de antes e depois da contagem, reduzindo a confiabilidade do ajuste.</p>
+      <p><strong>Como evitar:</strong> Bloquear endereços, registrar horário da contagem e validar segunda contagem para divergências relevantes.</p>
+    </div>
+    </section>
+      <section><h3>18. IA Aplicada à Logística</h3>
+    <h4>Como usar IA</h4>
+    <p>ChatGPT, Copilot, Gemini e Claude podem apoiar leitura de dados, organização de hipóteses, revisão de relatórios e simulação de perguntas de gestão. Power BI pode transformar os dados em painel visual. A IA deve apoiar análise e comunicação; a decisão continua exigindo validação humana, conferência de documentos e responsabilidade profissional.</p>
+    <h4>Prompt exemplo</h4>
+    <pre class="prompt"><code>Atue como analista de estoque. Análise os dados da Aula 11 sobre Realização de Inventário de Estoque. Use a fórmula Acuracidade = itens sem divergência / itens contados x 100, identifique riscos, explique a decisão e gere um relatório curto para o Projeto Integrador.</code></pre>
+    <h4>Aplicação prática</h4>
+    <p>A turma deve usar IA para organizar roteiro de contagem, classificar divergências por criticidade e sugerir causas prováveis. Depois precisa comparar a resposta da ferramenta com os dados originais, corrigir inconsistências e registrar quais recomendações foram aceitas ou descartadas. Esse registro desenvolve pensamento crítico e evita dependência automática da ferramenta.</p>
+    </section>
+      <section><h3>19. Fechamento da Aula</h3>
+    <p><strong>Resumo:</strong> a aula consolidou inventário como processo técnico de gestão de estoques, conectado a documentos, sistemas, indicadores e decisão profissional.</p>
+    <p><strong>Reflexão:</strong> o grupo deve responder: que decisão eu consigo defender com dados, e que evidência comprova minha decisão?</p>
+    <p><strong>Conexão com próxima aula:</strong> Na próxima aula, a turma avança para o próximo processo da sequência original, mantendo o portfólio do PI em evolução.</p>
+    <p><strong>Evidência de aprendizagem:</strong> artefato validado, cálculo resolvido, estudo de caso respondido e participação na atividade em grupo.</p>
+    <p><strong>Registro para portfólio:</strong> anexar o mini projeto da aula, a planilha utilizada e uma breve autoavaliação sobre a competência desenvolvida.</p>
+    </section>
+      <section><h3>Banco de Questões da Aula</h3>
+    <h4>Objetivas - 10 questões</h4>
+    
+        <div class="question">
+          <p><strong>1.</strong> Qual ação representa melhor uma decisão baseada em dados sobre inventário?</p>
+          <ol type="A">
+            <li>Decidir com base apenas na experiência do operador mais antigo.</li><li>Esperar o próximo inventário geral para tratar qualquer problema.</li><li>Registrar ajuste genérico para que o painel volte à meta.</li><li>Conferir documento, sistema, cálculo, impacto e responsável antes da ação.</li><li>Priorizar sempre o item de menor custo unitário.</li>
+          </ol>
+        </div>
+        
+        <div class="question">
+          <p><strong>2.</strong> Qual alternativa reduz o risco de ruptura sem criar excessó desnecessário?</p>
+          <ol type="A">
+            <li>Decidir com base apenas na experiência do operador mais antigo.</li><li>Esperar o próximo inventário geral para tratar qualquer problema.</li><li>Registrar ajuste genérico para que o painel volte à meta.</li><li>Priorizar sempre o item de menor custo unitário.</li><li>Conferir documento, sistema, cálculo, impacto e responsável antes da ação.</li>
+          </ol>
+        </div>
+        
+        <div class="question">
+          <p><strong>3.</strong> Qual evidência deve ser consultada antes de ajustar saldo no sistema?</p>
+          <ol type="A">
+            <li>Conferir documento, sistema, cálculo, impacto e responsável antes da ação.</li><li>Decidir com base apenas na experiência do operador mais antigo.</li><li>Esperar o próximo inventário geral para tratar qualquer problema.</li><li>Registrar ajuste genérico para que o painel volte à meta.</li><li>Priorizar sempre o item de menor custo unitário.</li>
+          </ol>
+        </div>
+        
+        <div class="question">
+          <p><strong>4.</strong> Qual indicador está mais conectado ao controle profissional desta aula?</p>
+          <ol type="A">
+            <li>Decidir com base apenas na experiência do operador mais antigo.</li><li>Conferir documento, sistema, cálculo, impacto e responsável antes da ação.</li><li>Esperar o próximo inventário geral para tratar qualquer problema.</li><li>Registrar ajuste genérico para que o painel volte à meta.</li><li>Priorizar sempre o item de menor custo unitário.</li>
+          </ol>
+        </div>
+        
+        <div class="question">
+          <p><strong>5.</strong> Qual comportamento profissional melhora a confiabilidade do estoque?</p>
+          <ol type="A">
+            <li>Decidir com base apenas na experiência do operador mais antigo.</li><li>Esperar o próximo inventário geral para tratar qualquer problema.</li><li>Conferir documento, sistema, cálculo, impacto e responsável antes da ação.</li><li>Registrar ajuste genérico para que o painel volte à meta.</li><li>Priorizar sempre o item de menor custo unitário.</li>
+          </ol>
+        </div>
+        
+        <div class="question">
+          <p><strong>6.</strong> Na empresa Hospital VidaPlena, qual prática fortalece a comunicação entre estoque e compras?</p>
+          <ol type="A">
+            <li>Decidir com base apenas na experiência do operador mais antigo.</li><li>Esperar o próximo inventário geral para tratar qualquer problema.</li><li>Registrar ajuste genérico para que o painel volte à meta.</li><li>Conferir documento, sistema, cálculo, impacto e responsável antes da ação.</li><li>Priorizar sempre o item de menor custo unitário.</li>
+          </ol>
+        </div>
+        
+        <div class="question">
+          <p><strong>7.</strong> Qual análise diferencia sintoma de causa raiz?</p>
+          <ol type="A">
+            <li>Decidir com base apenas na experiência do operador mais antigo.</li><li>Esperar o próximo inventário geral para tratar qualquer problema.</li><li>Registrar ajuste genérico para que o painel volte à meta.</li><li>Priorizar sempre o item de menor custo unitário.</li><li>Conferir documento, sistema, cálculo, impacto e responsável antes da ação.</li>
+          </ol>
+        </div>
+        
+        <div class="question">
+          <p><strong>8.</strong> Qual item deve ter prioridade em uma rotina de contagem cíclica?</p>
+          <ol type="A">
+            <li>Conferir documento, sistema, cálculo, impacto e responsável antes da ação.</li><li>Decidir com base apenas na experiência do operador mais antigo.</li><li>Esperar o próximo inventário geral para tratar qualquer problema.</li><li>Registrar ajuste genérico para que o painel volte à meta.</li><li>Priorizar sempre o item de menor custo unitário.</li>
+          </ol>
+        </div>
+        
+        <div class="question">
+          <p><strong>9.</strong> Qual cuidado evita erro ao usar planilhas de estoque?</p>
+          <ol type="A">
+            <li>Decidir com base apenas na experiência do operador mais antigo.</li><li>Conferir documento, sistema, cálculo, impacto e responsável antes da ação.</li><li>Esperar o próximo inventário geral para tratar qualquer problema.</li><li>Registrar ajuste genérico para que o painel volte à meta.</li><li>Priorizar sempre o item de menor custo unitário.</li>
+          </ol>
+        </div>
+        
+        <div class="question">
+          <p><strong>10.</strong> Qual entrega comprova aprendizagem por competência nesta aula?</p>
+          <ol type="A">
+            <li>Decidir com base apenas na experiência do operador mais antigo.</li><li>Esperar o próximo inventário geral para tratar qualquer problema.</li><li>Conferir documento, sistema, cálculo, impacto e responsável antes da ação.</li><li>Registrar ajuste genérico para que o painel volte à meta.</li><li>Priorizar sempre o item de menor custo unitário.</li>
+          </ol>
+        </div>
+        
+    <h4>Discursivas - 5 questões</h4>
+    <ul><li>Explique como inventário ajuda a reduzir custo operacional sem comprometer nível de serviço.</li><li>Descreva uma rotina de conferência que garanta rastreabilidade do dado.</li><li>Análise como a postura profissional influencia a acuracidade do estoque.</li><li>Relacione o indicador da aula com decisões de compras, armazenagem e atendimento.</li><li>Explique como o artefato da aula será usado no Projeto Integrador final.</li></ul>
+    <h4>Estudos de caso curtos - 2</h4>
+    <ul><li>Estudo curto 1: a Hospital VidaPlena identificou diferença de 12 unidades em item crítico. Indique dados necessários, cálculo e decisão.</li><li>Estudo curto 2: em uma operação de hospital, o fornecedor atrasou dois dias e a cobertura caiu abaixo do mínimo. Proponha ação imediata e prevenção.</li></ul>
+    <h4>Desafio avançado</h4>
+    <p>Desafio avançado: monte um painel com cinco SKUs, calcule Acuracidade, itens contados, divergência física, valor divergente e tempo de contagem, classifique criticidade e proponha plano de redução de custo para 30 dias.</p>
+    
+    </section>
+    </article>
+      <nav class="lesson-pager content-band" aria-label="Navegação entre aulas">
+        <a class="btn btn-outline-primary" href="aula-10.html">Aula anterior</a>
+        <a class="btn btn-primary" href="aula-12.html">Proxima aula</a>
+      </nav>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

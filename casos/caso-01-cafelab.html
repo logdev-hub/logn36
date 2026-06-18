@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caso 1 - Cafélab</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="../index.html">UC 3 Estoques</a>
+      <nav>
+        <a href="../index.html">Portal do aluno</a>
+        <a href="../livro-aluno.html">Livro do Aluno</a>
+        <a href="../index.html#casos-complementares">Casos complementares</a>
+        <span class="sidebar-label">Aulas</span>
+        <a href="../livro-aluno/aula-01.html">Aula 01</a>
+        <a href="../livro-aluno/aula-02.html">Aula 02</a>
+        <a href="../livro-aluno/aula-03.html">Aula 03</a>
+        <a href="../livro-aluno/aula-04.html">Aula 04</a>
+        <a href="../livro-aluno/aula-05.html">Aula 05</a>
+        <a href="../livro-aluno/aula-06.html">Aula 06</a>
+        <a href="../livro-aluno/aula-07.html">Aula 07</a>
+        <a href="../livro-aluno/aula-08.html">Aula 08</a>
+        <a href="../livro-aluno/aula-09.html">Aula 09</a>
+        <a href="../livro-aluno/aula-10.html">Aula 10</a>
+        <a href="../livro-aluno/aula-11.html">Aula 11</a>
+        <a href="../livro-aluno/aula-12.html">Aula 12</a>
+        <a href="../livro-aluno/aula-13.html">Aula 13</a>
+        <a href="../livro-aluno/aula-14.html">Aula 14</a>
+        <a href="../livro-aluno/aula-15.html">Aula 15</a>
+        <a href="../livro-aluno/aula-16.html">Aula 16</a>
+        <a href="../livro-aluno/aula-17.html">Aula 17</a>
+        <a href="../livro-aluno/aula-18.html">Aula 18</a>
+        <a href="../livro-aluno/aula-19.html">Aula 19</a>
+        <a href="../livro-aluno/aula-20.html">Aula 20</a>
+        <a href="../livro-aluno/aula-21.html">Aula 21</a>
+        <span class="sidebar-label">Complementos</span>
+        <a class="active" href="../casos/caso-01-cafelab.html">Caso 1 - Cafélab</a>
+        <a href="../casos/caso-02-freshbox.html">Caso 2 - FreshBox</a>
+        <a href="../casos/caso-03-medlog.html">Caso 3 - MedLog</a>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <div class="topbar">
+        <button class="btn btn-outline-light btn-sm nav-toggle" type="button" data-toggle-sidebar aria-label="Abrir menu">Menu</button>
+        <div>
+          <strong>Caso 1 - Cafélab</strong>
+          <small>Complemento profissional guiado</small>
+        </div>
+        <div class="header-actions">
+          <a class="btn btn-outline-light btn-sm" href="../livro-aluno.html">Índice</a>
+          <button class="btn btn-warning btn-sm" type="button" data-print>Imprimir</button>
+        </div>
+      </div>
+
+      <article class="case-content">
+        <header class="case-hero">
+          <span class="eyebrow">Caso complementar 1</span>
+          <h1>Cafélab: promoção Dose Dupla</h1>
+          <p>Você atua como analista de estoque de uma rede de cafeterias. O desafio é decidir quanto pedir, quando pedir e qual fornecedor usar para o SKU CAP-7, mantendo disponibilidade com menor custo total.</p>
+          <div class="case-actions">
+            <a class="btn btn-warning" href="../index.html#casos-complementares">Voltar aos complementos</a>
+            <button class="btn btn-outline-light" type="button" data-print>Imprimir</button>
+          </div>
+        </header>
+
+        <section>
+          <h2>Contexto operacional</h2>
+          <p>A promoção “Dose Dupla” aumentou o consumo de cápsulas CAP-7. Se faltar produto, a cafeteria perde venda e compromete a experiência do cliente. Se comprar demais, ocupa capital e espaço de armazenagem. A decisão precisa equilibrar custo, prazo, risco e nível de serviço.</p>
+          <div class="callout">
+            <strong>Missão do aluno:</strong> acompanhar cada etapa da análise e entender por que o fornecedor mais barato nem sempre é automaticamente a melhor escolha operacional.
+          </div>
+        </section>
+
+        <section>
+          <h2>Dados do problema</h2>
+          <div class="table-responsive">
+            <table class="table table-striped align-middle">
+              <thead><tr><th>Item</th><th>Valor</th></tr></thead>
+              <tbody>
+                <tr><td>Demanda anual (D)</td><td>120.000 unidades/ano</td></tr>
+                <tr><td>Consumo médio diário</td><td>400 unidades/dia</td></tr>
+                <tr><td>Custo por pedido (S)</td><td>R$ 250,00</td></tr>
+                <tr><td>Taxa anual de manutenção (i)</td><td>22% ao ano</td></tr>
+                <tr><td>Nível de serviço</td><td>95% (z = 1,65)</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-bordered align-middle">
+              <thead><tr><th>Critério</th><th>Fornecedor A</th><th>Fornecedor B</th></tr></thead>
+              <tbody>
+                <tr><td>Preço unitário</td><td>R$ 2,90</td><td>R$ 2,75</td></tr>
+                <tr><td>Prazo médio de entrega</td><td>6 dias</td><td>10 dias</td></tr>
+                <tr><td>Desvio do consumo diário</td><td>120 un/dia</td><td>180 un/dia</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section>
+          <h2>Processo passo a passo</h2>
+          <div class="process-steps">
+            <div class="process-step">
+              <h3><span class="step-number">1</span>Calcular o custo anual de manutenção por unidade</h3>
+              <p>Esse valor mostra quanto custa manter uma unidade em estoque por um ano. Ele combina preço de compra e taxa de manutenção.</p>
+              <code class="formula-line">H = preço unitário × taxa anual de manutenção</code>
+              <p>A: 2,90 × 0,22 = <strong>R$ 0,64</strong>. B: 2,75 × 0,22 = <strong>R$ 0,61</strong>.</p>
+            </div>
+
+            <div class="process-step">
+              <h3><span class="step-number">2</span>Calcular a quantidade econômica de compra</h3>
+              <p>A QEC indica o lote aproximado que equilibra custo de pedido e custo de manutenção de estoque.</p>
+              <code class="formula-line">QEC = √((2 × D × S) / H)</code>
+              <p>A: √((2 × 120.000 × 250) / 0,638) = <strong>9.698 unidades</strong>. B: √((2 × 120.000 × 250) / 0,605) = <strong>9.959 unidades</strong>.</p>
+            </div>
+
+            <div class="process-step">
+              <h3><span class="step-number">3</span>Calcular o estoque de segurança</h3>
+              <p>O estoque de segurança protege a operação contra variação de consumo durante o prazo de entrega.</p>
+              <code class="formula-line">ES = z × desvio do consumo × √prazo</code>
+              <p>A: 1,65 × 120 × √6 = <strong>485 unidades</strong>. B: 1,65 × 180 × √10 = <strong>939 unidades</strong>.</p>
+            </div>
+
+            <div class="process-step">
+              <h3><span class="step-number">4</span>Calcular o ponto de pedido</h3>
+              <p>O ponto de pedido informa quando a empresa deve disparar nova compra, antes que o estoque chegue a uma situação crítica.</p>
+              <code class="formula-line">PP = consumo médio diário × prazo + estoque de segurança</code>
+              <p>A: 400 × 6 + 485 = <strong>2.885 unidades</strong>. B: 400 × 10 + 939 = <strong>4.939 unidades</strong>.</p>
+            </div>
+
+            <div class="process-step">
+              <h3><span class="step-number">5</span>Calcular os custos anuais de pedido e manutenção</h3>
+              <p>O custo de pedidos depende de quantas vezes a empresa compra no ano. O custo de manutenção depende do estoque médio mantido.</p>
+              <code class="formula-line">Custo de pedidos = (D / QEC) × S</code>
+              <code class="formula-line">Custo de manutenção = (QEC / 2 + ES) × H</code>
+              <p>A: pedidos = <strong>R$ 3.093,54</strong>; manutenção = <strong>R$ 3.402,97</strong>. B: pedidos = <strong>R$ 3.012,47</strong>; manutenção = <strong>R$ 3.580,69</strong>.</p>
+            </div>
+
+            <div class="process-step">
+              <h3><span class="step-number">6</span>Comparar aquisição e custo total</h3>
+              <p>O custo de aquisição costuma ser o maior componente. A decisão final, porém, deve considerar também pedido, manutenção e risco operacional.</p>
+              <code class="formula-line">Custo total = aquisição + custo de pedidos + custo de manutenção</code>
+              <p>A: 348.000,00 + 3.093,54 + 3.402,97 = <strong>R$ 354.496,51</strong>.</p>
+              <p>B: 330.000,00 + 3.012,47 + 3.580,69 = <strong>R$ 336.593,16</strong>.</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Síntese da decisão</h2>
+          <div class="table-responsive">
+            <table class="table table-hover align-middle answer-table">
+              <thead><tr><th>Indicador</th><th>Fornecedor A</th><th>Fornecedor B</th></tr></thead>
+              <tbody>
+                <tr><td>H = preço × taxa</td><td>R$ 0,64</td><td>R$ 0,61</td></tr>
+                <tr><td>QEC</td><td>9.698 un</td><td>9.959 un</td></tr>
+                <tr><td>Estoque de segurança</td><td>485 un</td><td>939 un</td></tr>
+                <tr><td>Ponto de pedido</td><td>2.885 un</td><td>4.939 un</td></tr>
+                <tr><td>Custo anual de pedidos</td><td>R$ 3.093,54</td><td>R$ 3.012,47</td></tr>
+                <tr><td>Custo anual de manutenção</td><td>R$ 3.402,97</td><td>R$ 3.580,69</td></tr>
+                <tr><td>Custo de aquisição</td><td>R$ 348.000,00</td><td>R$ 330.000,00</td></tr>
+              </tbody>
+              <tfoot><tr><th>Custo total anual</th><td>R$ 354.496,51</td><td>R$ 336.593,16</td></tr></tfoot>
+            </table>
+          </div>
+          <div class="callout">
+            <strong>Decisão:</strong> o Fornecedor B tem menor custo anual, mas exige ponto de pedido e estoque de segurança maiores. Uma decisão madura pode manter B como principal e A como contingência para proteger o nível de serviço.
+          </div>
+        </section>
+      </article>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>
